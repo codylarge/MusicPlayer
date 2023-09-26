@@ -1,3 +1,13 @@
+/* Audio container AND search bar class */
+.toppage {
+
+}
+
+body {
+  text-align: center;
+  position: relative;
+}
+
 /* Style the audio player container */
 audio {
   width: 100%;
@@ -11,6 +21,22 @@ audio::-webkit-media-controls {
   color: white;
 }
 
-#songList {
-  cursor: pointer;
+#search {
+  text-align: center;
+  padding-top: 25px;
 }
+
+#songList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+  background-color: blue;
+}
+
+.song-item {
+  padding: 5px;
+}
+

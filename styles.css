@@ -1,9 +1,13 @@
-/* Audio container AND search bar class */
-.toppage {
-
+#currentsong {
+  color:white;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
 }
 
 body {
+  background-image: url("images/JuiceBackground.jpg");
+  background-position: center;
+  background-size: cover;
   text-align: center;
   position: relative;
 }
@@ -23,7 +27,11 @@ audio::-webkit-media-controls {
 
 #search {
   text-align: center;
-  padding-top: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-inline: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #songList {
@@ -33,10 +41,20 @@ audio::-webkit-media-controls {
   cursor: pointer;
   font-family: helvetica, sans-serif;
   font-weight: bold;
-  background-color: blue;
 }
 
 .song-item {
   padding: 5px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-inline: 35%;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.song-item:hover {
+  color: white;
+  background-color: rgba(68, 68, 68, 0.5);
 }
 

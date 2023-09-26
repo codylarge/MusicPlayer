@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="text" id="search" placeholder="Search for a song">
+    <ul id="songList">
+        <li data-src="songs/4instance.mp3">4 Instance</li>
+        <li data-src="songs/6.mp3">6</li>
+        <li data-src="songs/24hours.mp3">24 Hours</li>
+        <li data-src="songs/27club.mp3">27 Club</li>
+        <li data-src="songs/38special.mp3">38 Special</li>
+        <li data-src="songs/70s.mp3">'70s</li>
+        <li data-src="songs/astray.mp3">Astray</li>
+        <li data-src="songs/astray.mp3">Astray</li>
+        <!-- Add more songs as needed -->
+    </ul>
+    <audio id="myAudio" controls>
+        Your browser does not support the audio element.
+    </audio>
+    <script src="playmusic.js"></script>
+</body>
+</html>

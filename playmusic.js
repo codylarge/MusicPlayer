@@ -1,45 +1,87 @@
-import songlist from "./songlist.js"; // Import the songs array from the separate file
+import songlist from "./songlist.js";
 
-const audio = document.getElementById("myAudio");
-const songList = document.getElementById("songList");
-const searchInput = document.getElementById("search");
+// TODO: Seperate song playing operations into different js file as song changing/moving
+
+// Get references to important HTML elements
+const audio = document.getElementById("myAudio"); // The audio element for playback
+const songList = document.getElementById("songList"); // The song list element
+const searchInput = document.getElementById("search"); // The search input element
+const currentSong = document.getElementById("currentsong"); // The element displaying the current song
+
+let currentSongIndex = 0;
 
 // Function to create and append a list item for each song
-function createSongListItem(song) {
+function createSongListItem(song, index) {
   const listItem = document.createElement("li");
   listItem.textContent = song.name;
-  listItem.setAttribute("data-src", song.src); // give it a data-src attribute to apply path & name
-  listItem.classList.add("song-item"); // give it a class to apply CSS
+  listItem.classList.add("song-item");
   songList.appendChild(listItem);
+
+  // Add a click event listener to EVERY song (refine?)
+  listItem.addEventListener("click", () => playSong(index));
+}
+
+// Function to play a song by its index
+function playSong(index) {
+  const selectedSong = songlist[index].src;
+
+  // Pause the audio if it's currently playing
+  if (!audio.paused) {
+    audio.pause();
+  }
+
+  // Clear the audio source to stop the current playback
+  audio.src = "";
+
+  // Load and play the selected song
+  loadAndPlay(selectedSong, index);
+}
+
+// Function to load and play a song - Loads audio data
+function loadAndPlay(audioSrc, index) {
+  // Create a new Audio element to preload the selected song
+  const preloadAudio = new Audio();
+  preloadAudio.src = audioSrc;
+
+  // Listen for the "canplaythrough" event to ensure audio data is loaded
+  preloadAudio.addEventListener("canplaythrough", () => {
+    // Set the source of the main audio element to the preloaded audio
+    audio.src = audioSrc;
+
+    // Play the selected song
+    audio.play();
+
+    // Update the display with the current song's name
+    currentSong.textContent = "Song: " + songlist[index].name;
+
+    // Update the currently playing song index
+    currentSongIndex = index;
+  });
 }
 
 // Populate the song list dynamically using the imported songs array
 songlist.forEach(createSongListItem);
 
-// Add event listener to play a song when a song text is clicked
-songList.addEventListener("click", function (e) {
-  const target = e.target;
-  if (target.tagName === "LI") {
-    const selectedSong = target.getAttribute("data-src");
-    audio.src = selectedSong;
-    audio.load(); // Load the new audio source
-    audio.play(); // Play the selected song
-    console.log("Selected song: " + selectedSong);
-  }
-});
+// Play the first song when the page loads
+// playSong(0);
 
 // Add event listener to filter the song list based on user input
-searchInput.addEventListener("input", function () {
+searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value.toLowerCase();
   const songs = songList.getElementsByTagName("li");
 
   for (let i = 0; i < songs.length; i++) {
     const song = songs[i];
     const songName = song.textContent.toLowerCase();
-    if (songName.includes(searchTerm)) {
-      song.style.display = "block";
-    } else {
-      song.style.display = "none";
-    }
+
+    // Display or hide songs based on the search term
+    song.style.display = songName.includes(searchTerm) ? "block" : "none";
   }
+});
+
+// Add event listener to play the next song when the current song ends
+audio.addEventListener("ended", () => {
+  // Increment the index to play the next song (looping back to the first if needed)
+  currentSongIndex = (currentSongIndex + 1) % songlist.length;
+  playSong(currentSongIndex);
 });

@@ -205,7 +205,7 @@ const songlist = [
   { src: "songs/Bitch You're Done (v2).mp3", name: "Bitch You're Done (v2)" },
   {
     src: "songs/Bitty (feat. Trippie Redd).mp3",
-    name: "Bitt (feat. Trippie Redd)",
+    name: "Bitty (feat. Trippie Redd)",
   },
   { src: "songs/Bonjour (On Tour).mp3", name: "Bonjour (On Tour)" },
   { src: "songs/Boondocks.mp3", name: "Boondocks" },
@@ -236,7 +236,7 @@ const songlist = [
   { src: "songs/Flaws.mp3", name: "Flaws" },
   {
     src: "songs/Foo Foo (feat. G Herbo).mp3",
-    name: "Foo oo (feat. G Herbo)",
+    name: "Foo Foo (feat. G Herbo)",
   },
   { src: "songs/Forever Love.mp3", name: "Forever Love" },
   { src: "songs/Fuck You Mean.mp3", name: "Fuck You Mean" },
@@ -266,7 +266,7 @@ const songlist = [
   { src: "songs/Live Forever.mp3", name: "Live Forever" },
   {
     src: "songs/Living At The Top (Simple).mp3",
-    name: "Livig At The Top (Simple)",
+    name: "Living At The Top (Simple)",
   },
   { src: "songs/London Tipton.mp3", name: "London Tipton" },
   { src: "songs/Lost Too Many (Goblin).mp3", name: "Lost Too Many (Goblin)" },
@@ -345,6 +345,19 @@ const songlist = [
   { src: "songs/VLone Thugs.mp3", name: "VLone Thugs" },
   { src: "songs/Waves.mp3", name: "Waves" },
   { src: "songs/Wavy.mp3", name: "Wavy" },
+  {
+    src: "songs/Morning Again (Remaster).mp3",
+    name: "Morning Again (Remaster)",
+  },
+  {
+    src: "songs/Toxic Humans (Remaster).mp3",
+    name: "Toxic Humans (Remaster)",
+  },
+  { src: "songs/Aquafina.mp3", name: "Aquafina (Remaster)" },
+  {
+    src: "songs/Drive Me Crazy (Remaster).mp3",
+    name: "Drive Me Crazy (Remaster)",
+  },
 ];
 
 // Export the songs array for use in other scripts

@@ -25,11 +25,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-// Clear the last played song CSS so that if user changes song via buttons it wont stay
-function clearLastPlayedSongStyle() {
-  const lastPlayedSong = document.querySelector(".song-item.last-played");
-  if (lastPlayedSong) {
-    lastPlayedSong.classList.remove("last-played");
-  }
-}

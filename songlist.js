@@ -226,7 +226,7 @@ const songlist = [
   { src: "songs/Dont Touch My Raf.mp3", name: "Dont Touch My Raf" },
   {
     src: "songs/Door (feat. Chance The Rapper & Ant Clemons).mp3",
-    name: "Door(feat. Chance The Rapper & Ant Clemons)",
+    name: "Door (feat. Chance The Rapper)",
   },
   { src: "songs/Ducks.mp3", name: "Ducks" },
   { src: "songs/Everlasting Love.mp3", name: "Everlasting Love" },

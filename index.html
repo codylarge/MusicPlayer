@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V!rus-inj3ctor</title>
+    <title>Audio Player</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 id="currentsong"></h1>
+    <button id="prevButton">Previous</button>
     <audio id="myAudio" controls class="toppage">
         Your browser does not support the audio element.
     </audio>
+    <!-- Add next and previous song buttons -->
+    <button id="nextButton">Next</button>
+
     <br>
     <input type="text" id="search" placeholder="Search for a song" class="toppage">
     <ul id="songList"></ul>

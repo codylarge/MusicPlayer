@@ -168,7 +168,7 @@ const songlist = [
   { src: "songs/Stick Talk (Lavagirl).mp3", name: "Stick Talk (Lavagirl)" },
   { src: "songs/Stranger.mp3", name: "Stranger" },
   { src: "songs/Tales Of The Toxic.mp3", name: "Tales Of The Toxic" },
-  { src: "songs/Talk Too Much.mp3", name: "Talk Too Much" },
+  { src: "songs/Talk Too Much(Master).mp3", name: "Talk Too Much" },
   { src: "songs/Through My Head.mp3", name: "Through My Head" },
   { src: "songs/To The Grave (Feelings).mp3", name: "To The Grave (Feelings)" },
   { src: "songs/Triple 9 (999).mp3", name: "Triple 9 (999)" },

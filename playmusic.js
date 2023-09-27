@@ -3,10 +3,10 @@ import songlist from "./songlist.js";
 // TODO: Seperate song playing operations into different js file as song changing/moving
 
 // Get references to important HTML elements
-const audio = document.getElementById("myAudio"); // The audio element for playback
-const songList = document.getElementById("songList"); // The song list element
-const searchInput = document.getElementById("search"); // The search input element
-const currentSong = document.getElementById("currentsong"); // The element displaying the current song
+const audio = document.getElementById("myAudio");
+const songList = document.getElementById("songList");
+const searchInput = document.getElementById("search");
+const currentSong = document.getElementById("currentsong");
 
 let currentSongIndex = 0;
 
@@ -17,7 +17,7 @@ function createSongListItem(song, index) {
   listItem.classList.add("song-item");
   songList.appendChild(listItem);
 
-  // Add a click event listener to EVERY song (refine?)
+  // Add a click event listener to EVERY song (TODO: There must be a better way)
   listItem.addEventListener("click", () => playSong(index));
 }
 
@@ -85,3 +85,21 @@ audio.addEventListener("ended", () => {
   currentSongIndex = (currentSongIndex + 1) % songlist.length;
   playSong(currentSongIndex);
 });
+
+/* Song Navigation */
+const nextButton = document.getElementById("nextButton");
+const prevButton = document.getElementById("prevButton");
+
+// Add event listeners for the next and previous song buttons
+nextButton.addEventListener("click", playNextSong);
+prevButton.addEventListener("click", playPreviousSong);
+
+function playNextSong() {
+  currentSongIndex = (currentSongIndex + 1) % songlist.length;
+  playSong(currentSongIndex);
+}
+
+function playPreviousSong() {
+  currentSongIndex = (currentSongIndex - 1 + songlist.length) % songlist.length;
+  playSong(currentSongIndex);
+}

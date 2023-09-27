@@ -19,12 +19,6 @@ audio {
   margin: 0 auto;
 }
 
-/* Style the audio controls */
-audio::-webkit-media-controls {
-  background-color: #333;
-  color: white;
-}
-
 #search {
   text-align: center;
   margin-top: 10px;
@@ -35,9 +29,10 @@ audio::-webkit-media-controls {
 }
 
 #songList {
+  column-count: 3;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-inline: 250px;
   cursor: pointer;
   font-family: helvetica, sans-serif;
   font-weight: bold;
@@ -46,8 +41,8 @@ audio::-webkit-media-controls {
 .song-item {
   padding: 5px;
   border: 1px solid black;
-  border-radius: 20px;
-  margin-inline: 35%;
+  border-radius: 10px;
+  margin-inline: 10%;
   background-color: rgba(128, 128, 128, 0.75);
   padding-top: 5px;
   padding-bottom: 5px;
@@ -68,8 +63,22 @@ audio::-webkit-media-controls {
   background-color: rgba(0, 0, 0, 1);
 }
 
-@media (max-width: 1100px) {
+.icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 52px; /* Adjust the icon size as needed */
+  color: #999; /* Adjust the color of the icons */
+}
+
+@media (max-width: 1150px) {
   .song-item {
     margin-inline: 15%;
+  }
+
+  #songList {
+    column-count: 1;
+    margin-inline: 0px;
   }
 } 

@@ -33,9 +33,25 @@ function playSong(index) {
   // Clear the audio source to stop the current playback
   audio.src = "";
 
+  // Get the previously played song and remove its CSS style
+  const previouslyPlayedSong = document.querySelector(
+    ".song-item.last-clicked"
+  ); // Gets the last clicked song element
+  if (previouslyPlayedSong) {
+    previouslyPlayedSong.classList.remove("last-clicked"); // removes the "last clicked class" from the element
+  }
+
   // Load and play the selected song
   loadAndPlay(selectedSong, index);
+
+  // Adds the last clicked class to the new song thats playing
+  const currentSongItem = songList.querySelectorAll(".song-item")[index];
+  if (currentSongItem) {
+    currentSongItem.classList.add("last-clicked");
+  }
 }
+
+// Clear the last played song CSS so that if user changes song via buttons it wont stay
 
 // Function to load and play a song - Loads audio data
 function loadAndPlay(audioSrc, index) {

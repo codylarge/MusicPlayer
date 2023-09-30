@@ -1,2 +1,2 @@
 # [Site Link](https://juicewrldsongs.netlify.app/)
-A website with juice WRLD songs
+A website to listen to my music from

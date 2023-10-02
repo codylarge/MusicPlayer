@@ -1,5 +1,4 @@
 import songlist from "./songlist.js";
-
 // TODO: Seperate song playing operations into different js file as song changing/moving
 
 // Get references to important HTML elements
@@ -15,14 +14,36 @@ function createSongListItem(song, index) {
   const listItem = document.createElement("li");
   listItem.textContent = song.name;
   listItem.classList.add("song-item");
-  songList.appendChild(listItem);
 
-  // Add a click event listener to EVERY song (TODO: There must be a better way)
+  // Determine which list to append the song to based on the song's listNum property
+  //const targetList = song.listNum === 1 ? songList : songList2;
+  const targetList = (() => {
+    switch (song.listNum) {
+      case 1:
+        return songList1;
+      case 2:
+        return songList2;
+      case 3:
+        return songList3;
+      case 4:
+        return songList4;
+      case 5:
+        return songList5;
+      // Add more cases as needed
+      default:
+        // Default action if listNum doesn't match any cases
+        return defaultList;
+    }
+  })();
+
+  targetList.appendChild(listItem);
+
+  // Add a click event listener to EVERY song to get all info from it
   listItem.addEventListener("click", () => playSong(index));
 }
 
 // Function to play a song by its index
-function playSong(index) {
+function playSong(index, listNum) {
   const selectedSong = songlist[index].src;
 
   // Pause the audio if it's currently playing
@@ -51,6 +72,8 @@ function playSong(index) {
   }
 }
 
+songlist.forEach((song, index) => createSongListItem(song, index));
+
 // Clear the last played song CSS so that if user changes song via buttons it wont stay
 
 // Function to load and play a song - Loads audio data
@@ -75,16 +98,13 @@ function loadAndPlay(audioSrc, index) {
   });
 }
 
-// Populate the song list dynamically using the imported songs array
-songlist.forEach(createSongListItem);
-
 // Play the first song when the page loads
 // playSong(0);
 
 // Add event listener to filter the song list based on user input
 searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value.toLowerCase();
-  const songs = songList.getElementsByTagName("li");
+  const songs = songList1.getElementsByTagName("li");
 
   for (let i = 0; i < songs.length; i++) {
     const song = songs[i];

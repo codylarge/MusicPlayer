@@ -12,6 +12,10 @@ body {
   position: relative;
 }
 
+li {
+  user-select: none;
+}
+
 /* Style the audio player container */
 audio {
   width: 100%;
@@ -28,7 +32,7 @@ audio {
   padding-bottom: 5px;
 }
 
-#songList {
+.songlist {
   column-count: 3;
   list-style-type: none;
   padding: 0;
@@ -36,6 +40,13 @@ audio {
   cursor: pointer;
   font-family: helvetica, sans-serif;
   font-weight: bold;
+}
+
+.listheader {
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
 }
 
 .song-item {
@@ -77,7 +88,7 @@ audio {
     margin-inline: 15%;
   }
 
-  #songList {
+  .songlist {
     column-count: 1;
     margin-inline: 0px;
   }

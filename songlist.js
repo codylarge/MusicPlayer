@@ -2,6 +2,7 @@
 
 // listNum: 1: JW3  | 2: DRFL | 3: GB&GR | 4: 999 | 5: WRLD on Drugs | 6: JuiceTheKidd
 const songlist = [
+  { src: "", name: "JW3", listNum: 10 }, // Title Button (-1 because its at the top of the page and needs a unique id)
   { src: "songs/38 Special.mp3", name: ".38 Special", listNum: 1 },
   { src: "songs/Adore You.mp3", name: "Adore You", listNum: 1 },
   { src: "songs/All Alone (On My Own).mp3", name: "All Alone (On My Own)", listNum: 1 },
@@ -77,6 +78,7 @@ const songlist = [
   { src: "songs/X-Mas List.mp3", name: "X-Mas List", listNum: 1 },
   { src: "songs/Zoom.mp3", name: "Zoom", listNum: 1 },
 
+  { src: "", name: "DRFL", listNum: 0 }, // Title Button
   { src: "songs/'70s.mp3", name: "'70s", listNum: 2 },
   { src: "songs/Anxiety.mp3", name: "Anxiety", listNum: 2 },
   { src: "songs/Barbarian (Vandal).mp3", name: "Barbarian (Vandal)", listNum: 2 },
@@ -107,6 +109,7 @@ const songlist = [
   { src: "songs/Stick Talk (Lavagirl).mp3", name: "Stick Talk (Lavagirl)", listNum: 2 },
   { src: "songs/Victorious.mp3", name: "Victorious", listNum: 2 },
 
+  { src: "", name: "GB&GR", listNum: 0 }, // Title Button
   { src: "songs/27 Club.mp3", name: "27 Club", listNum: 3 },
   { src: "songs/Airport Security.mp3", name: "Airport Security (feat. Lil Yachty)", listNum: 3 },
   { src: "songs/Back In Chicago.mp3", name: "Back In Chicago", listNum: 3 },
@@ -172,22 +175,7 @@ const songlist = [
   { src: "songs/Wavy.mp3", name: "Wavy", listNum: 3 },
   { src: "songs/Swisher (Hilfiger).mp3", name: "Swisher (Hilfiger)", listNum: 3 },
 
-  { src: "songs/All Burnt Up.mp3", name: "All Burnt Up", listNum: 4 },
-  { src: "songs/Already (v1).mp3", name: "Already (v1)", listNum: 4 },
-  { src: "songs/Faded (Oh No).mp3", name: "Faded (Oh No)", listNum: 4 },
-  { src: "songs/Hell (feat DMG Mthang).mp3", name: "Hell (feat DMG Mthang)", listNum: 4 },
-  { src: "songs/Hennessy.mp3", name: "Hennessy", listNum: 4 },
-  { src: "songs/Kawasaki.mp3", name: "Kawasaki", listNum: 4 },
-  { src: "songs/Love No Hoe.mp3", name: "Love No Hoe", listNum: 4 },
-  { src: "songs/Make It Sell.mp3", name: "Make It Sell", listNum: 4 },
-  { src: "songs/Mind Games.mp3", name: "Mind Games", listNum: 4 },
-  { src: "songs/No More.mp3", name: "No More", listNum: 4 },
-  { src: "songs/No Vanity.mp3", name: "No Vanity", listNum: 4 },
-  { src: "songs/On & On.mp3", name: "On & On", listNum: 4 },
-  { src: "songs/Rock.mp3", name: "Rock", listNum: 4 },
-  { src: "songs/Triple 9 (999).mp3", name: "Triple 9 (999)", listNum: 4 },
-  { src: "songs/Your Man (France).mp3", name: "Your Man (France)", listNum: 4 },
-
+  { src: "", name: "WOD", listNum: 0 }, // Title Button
   { src: "songs/24 Hours.mp3", name: "24 Hours", listNum: 5 },
   { src: "songs/All Out.mp3", name: "All Out", listNum: 5 },
   { src: "songs/Common Sense (Worth It).mp3", name: "Common Sense (Worth It)", listNum: 5 },
@@ -235,6 +223,24 @@ const songlist = [
   { src: "songs/Takever (feat. Lil Yachty).mp3", name: "Takever (feat. Lil Yachty)", listNum: 5 },
   { src: "songs/Thrills.mp3", name: "Thrills", listNum: 5 },
 
+  { src: "", name: "999", listNum: 0 }, // Title Button
+  { src: "songs/All Burnt Up.mp3", name: "All Burnt Up", listNum: 4 },
+  { src: "songs/Already (v1).mp3", name: "Already (v1)", listNum: 4 },
+  { src: "songs/Faded (Oh No).mp3", name: "Faded (Oh No)", listNum: 4 },
+  { src: "songs/Hell (feat DMG Mthang).mp3", name: "Hell (feat DMG Mthang)", listNum: 4 },
+  { src: "songs/Hennessy.mp3", name: "Hennessy", listNum: 4 },
+  { src: "songs/Kawasaki.mp3", name: "Kawasaki", listNum: 4 },
+  { src: "songs/Love No Hoe.mp3", name: "Love No Hoe", listNum: 4 },
+  { src: "songs/Make It Sell.mp3", name: "Make It Sell", listNum: 4 },
+  { src: "songs/Mind Games.mp3", name: "Mind Games", listNum: 4 },
+  { src: "songs/No More.mp3", name: "No More", listNum: 4 },
+  { src: "songs/No Vanity.mp3", name: "No Vanity", listNum: 4 },
+  { src: "songs/On & On.mp3", name: "On & On", listNum: 4 },
+  { src: "songs/Rock.mp3", name: "Rock", listNum: 4 },
+  { src: "songs/Triple 9 (999).mp3", name: "Triple 9 (999)", listNum: 4 },
+  { src: "songs/Your Man (France).mp3", name: "Your Man (France)", listNum: 4 },
+
+  { src: "", name: "UKNnOWN", listNum: 0 }, // Title Button
   { src: "songs/2019 My Year.mp3", name: "2019 My Year", listNum: 6 },
   { src: "songs/4 Instance.mp3", name: "4 Instance", listNum: 6 },
   { src: "songs/6.mp3", name: "6", listNum: 6 },

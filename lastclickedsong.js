@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add a click event listener to the song list container
   songList.addEventListener("click", function (e) {
     const target = e.target;
-    if (target.tagName === "LI") {
+    if (target.tagName === "LI" && song.listNum != 0) {
       // Remove the .last-clicked class from the previously clicked song item
       if (lastClickedSongItem) {
         lastClickedSongItem.classList.remove("last-clicked");

@@ -1,7 +1,6 @@
 import songlist from "./songlist.js";
 
 // TODO: Seperate song playing operations into different js file as song changing/moving
-// TODO: Make a song with specific listNum that lets it act as a title to each album list
 
 // Get references to important HTML elements
 const audio = document.getElementById("myAudio");
@@ -30,7 +29,6 @@ function createSongListItem(song, index, listNum) {
 // Function to play a song by its index
 function playSong(index) {
   const selectedSong = songlist[index].src;
-
   // Pause the audio if it's currently playing
   if (!audio.paused) {
     audio.pause();

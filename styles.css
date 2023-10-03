@@ -2,15 +2,22 @@
   color:white;
   font-family: helvetica, sans-serif;
   font-weight: bold;
+  text-shadow: 3px 3px 1px black;
 }
 
 body {
-  background-image: url("images/JuiceBackground.jpg");
+  user-select: none;
+  background-image: url("images/Background\ Full\ Res\ Black.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   position: relative;
 }
+
+/*li {
+  user-select: none;
+}*/
 
 /* Style the audio player container */
 audio {
@@ -18,14 +25,16 @@ audio {
   max-width: 400px; /* Adjust as needed */
   margin: 0 auto;
 }
-
 #search {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
   padding-inline: 50px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: rgb(13, 0, 20);
+  color: white;
+  border-radius: 1cqw;
 }
 
 #songList {
@@ -38,54 +47,99 @@ audio {
   font-weight: bold;
 }
 
+/* Album Button */
+#album-10 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 32px;
+  cursor: auto;
+  color: #b9c8da;
+  text-shadow: 3px 3px 1px black;
+  background-color: #394160;
+}
+
 /* Individual Songs */
 .song-item {
   padding: 5px;
   border: 1px solid black;
   border-radius: 10px;
   margin-inline: 10%;
-  background-color: rgba(128, 128, 128, 0.75);
+  background-color: #1d2435e3;
   text-shadow: 1px 1px 1px black;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
+/* Titles */
+#album-0 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 32px;
+  cursor: auto;
+  margin-top: 25px;
+  color: #b9c8da;
+  text-shadow: 3px 3px 1px black;
+  background-color: #394160;
+}
+
+
 /* JW3 */
 #album-1 { 
-  color: blue;
+  color: #007FFF ;
+}
+#album-1.last-clicked {
+  color: #4eafff ;
 }
 
 /* DRFL */
 #album-2 {
-  color: orange;
+  color: rgb(255, 60, 0);
 }
+#album-2.last-clicked {
+  color: rgb(255, 96, 96);
+}
+
 /* GB&GR */
 #album-3 {
-  color: purple;
+  color: rgb(6, 255, 255);
+}
+#album-3.last-clicked {
+  color: rgb(6, 255, 180);
 }
 /* 999 */
 #album-4 {
-  color: darkslateblue;
+  color: rgb(131, 49, 207);
+}
+#album-4.last-clicked {
+  color: rgb(194, 49, 207);
 }
 /* WOD */
 #album-5 {
   color: limegreen;
 }
-
+#album-5.last-clicked {
+  color: rgb(144, 255, 80);
+}
+#album-6 {
+  color: gray;
+}
+#album-6.last-clicked {
+  color: red;
+}
 
 .song-item:hover {
   color: white;
-  background-color: rgba(68, 68, 68, 0.75);
+  background-color: #394160;
 }
 
 .last-clicked {
   color: rgb(255, 37, 37);
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #7386a5;
 }
 
 .last-clicked:hover {
   color: rgb(255, 0, 0);
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #7386a5;
 }
 
 .icon-button {

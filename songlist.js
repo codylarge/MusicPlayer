@@ -276,7 +276,7 @@ const songlist = [
   { src: "songs/So What.mp3", name: "So What", listNum: 5 },
   { src: "songs/Tag.mp3", name: "Tag", listNum: 5 },
   { src: "songs/Take Off (Sessions).mp3", name: "Take Off (Sessions)", listNum: 5 },
-  { src: "songs/Takever (feat. Lil Yachty).mp3", name: "Takever (feat. Lil Yachty)", listNum: 5 },
+  { src: "songs/Takeover (feat. Lil Yachty).mp3", name: "Takeover (feat. Lil Yachty)", listNum: 5 },
   { src: "songs/Thrills.mp3", name: "Thrills", listNum: 5 },
 
   { src: "", name: "999", listNum: 0 }, // Title Button

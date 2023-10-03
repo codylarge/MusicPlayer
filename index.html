@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audio Player</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <h1 id="currentsong"></h1>
     <button id="prevButton" class="icon-button">
-        <i class="fas fa-chevron-left"></i> <!-- Font Awesome left arrow icon -->
-      </button>
+      <i class="fas fa-chevron-left"></i>
+      <!-- Font Awesome left arrow icon -->
+    </button>
     <audio id="myAudio" controls class="toppage">
-        Your browser does not support the audio element.
+      Your browser does not support the audio element.
     </audio>
     <!-- Add next and previous song buttons -->
     <button id="nextButton" class="icon-button">
-        <i class="fas fa-chevron-right"></i> <!-- Font Awesome right arrow icon -->
-      </button>
+      <i class="fas fa-chevron-right"></i>
+      <!-- Font Awesome right arrow icon -->
+    </button>
 
-    <br>
-    <input type="text" id="search" placeholder="Search for a song" class="toppage">
+    <br />
+    <input
+      type="text"
+      id="search"
+      placeholder="Search for a song"
+      class="toppage"
+    />
     <ul id="songList"></ul>
     <script type="module" src="lastclickedsong.js"></script>
     <script type="module" src="playmusic.js"></script>
     <script type="module" src="songlist.js"></script>
-</body>
+  </body>
 </html>

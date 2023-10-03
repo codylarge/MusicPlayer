@@ -1,6 +1,7 @@
 import songlist from "./songlist.js";
 
 // TODO: Seperate song playing operations into different js file as song changing/moving
+// TODO: Make a song with specific listNum that lets it act as a title to each album list
 
 // Get references to important HTML elements
 const audio = document.getElementById("myAudio");
@@ -11,10 +12,15 @@ const currentSong = document.getElementById("currentsong");
 let currentSongIndex = 0;
 
 // Function to create and append a list item for each song
-function createSongListItem(song, index) {
+function createSongListItem(song, index, listNum) {
   const listItem = document.createElement("li");
   listItem.textContent = song.name;
   listItem.classList.add("song-item");
+
+  const album = song.listNum;
+
+  listItem.setAttribute("id", `album-${album}`);
+
   songList.appendChild(listItem);
 
   // Add a click event listener to EVERY song (TODO: There must be a better way)
@@ -102,7 +108,10 @@ audio.addEventListener("ended", () => {
   playSong(currentSongIndex);
 });
 
-/* Song Navigation */
+
+/*-----------------*/
+/*-Song Navigation-*/
+/*-----------------*/
 const nextButton = document.getElementById("nextButton");
 const prevButton = document.getElementById("prevButton");
 

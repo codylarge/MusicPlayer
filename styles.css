@@ -38,15 +38,40 @@ audio {
   font-weight: bold;
 }
 
+/* Individual Songs */
 .song-item {
   padding: 5px;
   border: 1px solid black;
   border-radius: 10px;
   margin-inline: 10%;
   background-color: rgba(128, 128, 128, 0.75);
+  text-shadow: 1px 1px 1px black;
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+/* JW3 */
+#album-1 { 
+  color: blue;
+}
+
+/* DRFL */
+#album-2 {
+  color: orange;
+}
+/* GB&GR */
+#album-3 {
+  color: purple;
+}
+/* 999 */
+#album-4 {
+  color: darkslateblue;
+}
+/* WOD */
+#album-5 {
+  color: limegreen;
+}
+
 
 .song-item:hover {
   color: white;

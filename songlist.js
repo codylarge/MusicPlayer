@@ -120,7 +120,7 @@ const songlist = [
   { src: "songs/Get Geeked.mp3", name: "Get Geeked", listNum: 2 },
   { src: "songs/Get Over.mp3", name: "Get Over", listNum: 2 },
   { src: "songs/Give Me My Fix.mp3", name: "Give Me My Fix", listNum: 2 },
-  { src: "songs/Hi Tech Talk.mp3", name: "Hi Tech Talk", listNum: 2 },
+  { src: "songs/Hi Tech Top.mp3", name: "Hi Tech Top", listNum: 2 },
   { src: "songs/Impatient.mp3", name: "Impatient", listNum: 2 },
   { src: "songs/Issues (Hit) (feat. G Herbo).mp3", name: "Issues (feat. G Herbo)", listNum: 2 },
   { src: "songs/In The Summer.mp3", name: "In The Summer", listNum: 2 },

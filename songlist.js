@@ -83,7 +83,7 @@ const songlist = [
   { src: "", name: "WOD", listNum: 0 }, // Title Button
     //#region WOD
   { src: "songs/24 Hours.mp3", name: "24 Hours", listNum: 5 },
-  { src: "songs/8 Minute Freestyle.mp3", name: "24 Hours", listNum: 5 },
+  { src: "songs/8 Minute Freestyle.mp3", name: "8 Minute Freestyle", listNum: 5 },
   { src: "songs/Abyss.mp3", name: "Abyss", listNum: 5 },
   { src: "songs/Abyss (Interlude).mp3", name: "Abyss (Interlude)", listNum: 5 },
   { src: "songs/All Out.mp3", name: "All Out", listNum: 5 },
@@ -150,8 +150,6 @@ const songlist = [
   { src: "songs/Whip (Alaska).mp3", name: "Whip (Alaska)", listNum: 5 },
   { src: "songs/Try Me.mp3", name: "Try Me", listNum: 5 },
   { src: "songs/Z Nation.mp3", name: "Z Nation", listNum: 5 },
-  { src: "songs/Haha.mp3", name: "Haha", listNum: 5 },
-  { src: "songs/Kiki (King Kong).mp3", name: "Kiki (King Kong)", listNum: 5 },
   { src: "songs/Haha.mp3", name: "Haha", listNum: 5 },
   { src: "songs/Kiki (King Kong).mp3", name: "Kiki (King Kong)", listNum: 5 },
   { src: "songs/Narcotics.mp3", name: "Narcotics", listNum: 5 },

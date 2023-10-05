@@ -120,11 +120,21 @@ audio {
 #album-5.last-clicked {
   color: rgb(144, 255, 80);
 }
+
+/* Unknowns */ 
 #album-6 {
   color: white;
 }
 #album-6.last-clicked {
   color: red;
+}
+
+/* Exclusives */
+#album-7 {
+  color: Gold;
+}
+#album-7.last-clicked {
+  color: goldenrod;
 }
 
 .song-item:hover {

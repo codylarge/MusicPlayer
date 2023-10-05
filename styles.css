@@ -91,6 +91,7 @@ audio {
   color: #4eafff ;
 }
 
+
 /* DRFL */
 #album-2 {
   color: rgb(255, 60, 0);
@@ -99,6 +100,7 @@ audio {
   color: rgb(255, 96, 96);
 }
 
+
 /* GB&GR */
 #album-3 {
   color: rgb(6, 255, 255);
@@ -106,6 +108,8 @@ audio {
 #album-3.last-clicked {
   color: rgb(6, 255, 180);
 }
+
+
 /* 999 */
 #album-4 {
   color: rgb(131, 49, 207);
@@ -113,6 +117,8 @@ audio {
 #album-4.last-clicked {
   color: rgb(194, 49, 207);
 }
+
+
 /* WOD */
 #album-5 {
   color: limegreen;
@@ -121,6 +127,7 @@ audio {
   color: rgb(144, 255, 80);
 }
 
+
 /* Unknowns */ 
 #album-6 {
   color: white;
@@ -128,6 +135,7 @@ audio {
 #album-6.last-clicked {
   color: red;
 }
+
 
 /* Exclusives */
 #album-7 {

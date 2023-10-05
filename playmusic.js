@@ -1,5 +1,6 @@
 import songlist from "./songlist.js";
 
+// TODO: ADD SHUFFLE FEATURE
 // TODO: Seperate song playing operations into different js file as song changing/moving
 
 // Get references to important HTML elements
@@ -45,7 +46,6 @@ function playSong(index) {
     previouslyPlayedSong.classList.remove("last-clicked"); // removes the "last clicked class" from the element
   }
 
-  // Load and play the selected song
   loadAndPlay(selectedSong, index);
 
   // Adds the last clicked class to the new song thats playing
@@ -63,18 +63,15 @@ function loadAndPlay(audioSrc, index) {
   const preloadAudio = new Audio();
   preloadAudio.src = audioSrc;
 
-  // Listen for the "canplaythrough" event to ensure audio data is loaded
+  // Listen for the "canplaythrough" event to ensure audio data is loaded before attempting to play
   preloadAudio.addEventListener("canplaythrough", () => {
-    // Set the source of the main audio element to the preloaded audio
-    audio.src = audioSrc;
 
-    // Play the selected song
+    audio.src = audioSrc;
     audio.play();
 
     // Update the display with the current song's name
     currentSong.textContent = "Song: " + songlist[index].name;
 
-    // Update the currently playing song index
     currentSongIndex = index;
   });
 }
@@ -82,7 +79,7 @@ function loadAndPlay(audioSrc, index) {
 // Populate the song list dynamically using the imported songs array
 songlist.forEach(createSongListItem);
 
-// Play the first song when the page loads
+// Uncomment this to play the first song when the page loads
 // playSong(0);
 
 // Add event listener to filter the song list based on user input

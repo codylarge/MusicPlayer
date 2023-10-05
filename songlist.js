@@ -246,7 +246,7 @@ const songlist = [
   { src: "songs/VLone Thugs.mp3", name: "VLone Thugs", listNum: 2 },
   { src: "songs/Void.mp3", name: "Void", listNum: 2 },
   { src: "songs/Wake Up.mp3", name: "Wake Up", listNum: 2 },
-  { src: "songs/Damn Right.mp3", name: "What I wanna Do (Damn Right)", listNum: 2 },
+  { src: "songs/Damn Right.mp3", name: "What I Wanna Do (Damn Right)", listNum: 2 },
   { src: "songs/Willing To Die.mp3", name: "Willing To Die", listNum: 2 },
   { src: "songs/Worth It.mp3", name: "Worth It", listNum: 2 },
   //#endregion

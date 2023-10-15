@@ -59,13 +59,18 @@ function playSong(index) {
 
 // Function to load and play a song - Loads audio data
 function loadAndPlay(audioSrc, index) {
-  // Create a new Audio element to preload the selected song
+  // Create a new Audio element to preload the next song
+  const nextIndex = (index + 1) % songlist.length;
+  const nextAudio = new Audio();
+  nextAudio.src = songlist[nextIndex].src;
+  nextAudio.preload = "auto"; // Preload the audio data
+
+  // Create a new Audio element for the selected song
   const preloadAudio = new Audio();
   preloadAudio.src = audioSrc;
 
   // Listen for the "canplaythrough" event to ensure audio data is loaded before attempting to play
   preloadAudio.addEventListener("canplaythrough", () => {
-
     audio.src = audioSrc;
     audio.play();
 
@@ -73,6 +78,9 @@ function loadAndPlay(audioSrc, index) {
     currentSong.textContent = "Song: " + songlist[index].name;
 
     currentSongIndex = index;
+
+    // Start preloading the next song
+    nextAudio.load();
   });
 }
 

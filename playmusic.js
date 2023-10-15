@@ -55,12 +55,20 @@ function playSong(index) {
   }
 }
 
-// Clear the last played song CSS so that if user changes song via buttons it wont stay
+function loadNextSong(index) {
+  getRandomSongIndex(index, )
+}
 
+let nextIndex = 0;
 // Function to load and play a song - Loads audio data
 function loadAndPlay(audioSrc, index) {
   // Create a new Audio element to preload the next song
-  const nextIndex = (index + 1) % songlist.length;
+  if(isShuffle){
+    nextIndex = getRandomSongIndex(index, songlist.length);
+  } else {
+    nextIndex = (index + 1) % songlist.length;
+  }
+
   const nextAudio = new Audio();
   nextAudio.src = songlist[nextIndex].src;
   nextAudio.preload = "auto"; // Preload the audio data
@@ -123,26 +131,14 @@ nextButton.addEventListener("click", playNextSong);
 prevButton.addEventListener("click", playPreviousSong);
 
 
-/*-----------------*/
+/*-------------------*/
 /*-Shuffle Mechanics-*/
-/*-----------------*/
+/*-------------------*/
 const shuffleButton = document.getElementById("shuffleButton");
 let isShuffle = false;
 
-// Toggle CSS effects when active
-shuffleButton.addEventListener("click", () => {
-  shuffleButton.classList.toggle("active");
-});
-
 function playNextSong() {
-  if (isShuffle) {
-    const totalSongs = songlist.length;
-    const randomIndex = getRandomSongIndex(currentSongIndex, totalSongs);
-    playSong(randomIndex);
-  } else {
-    currentSongIndex = (currentSongIndex + 1) % songlist.length;
-    playSong(currentSongIndex);
-  }
+    playSong(nextIndex);
 }
 
 // This function doesnt really work at the moment, if user is in shuffle mode it plays the wrong song
@@ -162,10 +158,6 @@ function getRandomSongIndex(currentIndex, totalSongs) {
 }
 
 shuffleButton.addEventListener("click", () => {
+  shuffleButton.classList.toggle("active");
   isShuffle = !isShuffle;
-  if (isShuffle) {
-    shuffleButton.classList.add("active");
-  } else {
-    shuffleButton.classList.remove("active");
-  }
 });

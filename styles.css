@@ -7,21 +7,42 @@
 
 .shuffle {
   cursor: pointer;
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.3); /* Add a shadow to the button */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #b9c8da;
+  border: 2px solid #b9c8da;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5); /* Add a shadow to the button */
   border-radius: 25px;
-  width: 200px;
+  width: 150px;
   user-select: none;
   transition: background-color 0.2s, color 0.2s;
   transition: border 0.2s, color 0.2s;
 }
+.shuffle:hover {
+  background-color: rgba(0, 0, 0, .8);
+  color: #394160;
+  border: 2px solid #394160;
+}
 
 .shuffle.active {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);;
   color: rgb(0, 228, 0);
   border: 2px solid rgb(0, 228, 0);
+}
+
+.icon-button {
+  background: none;
+  margin-inline: 20px;
+  border: none;
+  cursor: pointer;
+  text-shadow: 7px 7px 5px rgba(0, 0, 0, .5); /* Add a shadow to the button */
+  font-size: 42px; /* Adjust the icon size as needed */
+  color: #b9c8da; /* Adjust the color of the icons */ 
+}
+.icon-button:hover {
+  color: #394160; /* Adjust the color of the icons */
+}
+.icon-button:active {
+  color: rgb(228, 0, 0);; /* Adjust the color of the icons */
 }
 
 body {
@@ -43,12 +64,14 @@ audio {
   width: 100%;
   max-width: 400px; /* Adjust as needed */
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 #search {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   padding-inline: 50px;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -179,16 +202,6 @@ audio {
   color: rgb(255, 0, 0);
   background-color: #7386a5;
 }
-
-.icon-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font-size: 52px; /* Adjust the icon size as needed */
-  color: #999; /* Adjust the color of the icons */
-}
-
 @media (max-width: 1150px) {
   .song-item {
     margin-inline: 15%;

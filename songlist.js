@@ -480,6 +480,7 @@ const songlist = [
   { src: "songs/For The Team (feat. Lil Yachty).mp3", name: "For The Team (feat. Lil Yachty)", listNum: 6 },
   { src: "songs/Going MIA.mp3", name: "Going MIA", listNum: 6 },
   { src: "songs/Good Day.mp3", name: "Good Day", listNum: 6 },
+  { src: "songs/Gone.mp3", name: "Gone", listNum: 6 },
   { src: "songs/Goyard Bag.mp3", name: "Goyard Bag", listNum: 6 },
   { src: "songs/Home (feat. LAROI).mp3", name: "Home (Feat. LAROI)", listNum: 6 },
   { src: "songs/Irony (Inspire Me).mp3", name: "Irony (Inspire Me)", listNum: 6 },

@@ -5,6 +5,25 @@
   text-shadow: 3px 3px 1px black;
 }
 
+.shuffle {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.3); /* Add a shadow to the button */
+  border-radius: 25px;
+  width: 200px;
+  user-select: none;
+  transition: background-color 0.2s, color 0.2s;
+  transition: border 0.2s, color 0.2s;
+}
+
+.shuffle.active {
+  background-color: black;
+  color: rgb(0, 228, 0);
+  border: 2px solid rgb(0, 228, 0);
+}
+
 body {
   user-select: none;
   background-image: url("images/Background\ Full\ Res\ Black.jpg");
@@ -25,6 +44,7 @@ audio {
   max-width: 400px; /* Adjust as needed */
   margin: 0 auto;
 }
+
 #search {
   text-align: center;
   margin-top: 10px;

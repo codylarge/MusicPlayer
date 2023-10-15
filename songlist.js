@@ -167,7 +167,7 @@ const songlist = [
 
   { src: "", name: "DRFL", listNum: 0 }, // Title Button
   //#region DRFL
-  { src: "songs/'70s.mp3", name: "'70s", listNum: 2 },
+  { src: "songs/70s.mp3", name: "'70s", listNum: 2 },
   { src: "songs/90210 (Speed Demon).mp3", name: "90210 (Speed Demon)", listNum: 2 },
   { src: "songs/All Talk.mp3", name: "All Talk", listNum: 2 },
   { src: "songs/Another One.mp3", name: "Another One", listNum: 2 },
@@ -302,7 +302,7 @@ const songlist = [
   { src: "songs/Bad Romance.mp3", name: "Bad Romance", listNum: 3 },
   { src: "songs/Ball (Larry Bird).mp3", name: "Ball (Larry Bird)", listNum: 3 },
   { src: "songs/Bank Account.mp3", name: "Bank Account", listNum: 3 },
-  { src: "songs/Been Awhile.mp3", name: "Been Awhile", listNum: 3 },
+  { src: "songs/Been A While.mp3", name: "Been Awhile", listNum: 3 },
   { src: "songs/Bentley Truck.mp3", name: "Bentley Truck", listNum: 3 },
   { src: "songs/Billy Idol (Mary Jane).mp3", name: "Billy Idol (Mary Jane)", listNum: 3 },
   { src: "songs/Bottle.mp3", name: "Bottle", listNum: 3 },

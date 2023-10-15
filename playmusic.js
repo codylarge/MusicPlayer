@@ -114,12 +114,50 @@ const prevButton = document.getElementById("prevButton");
 nextButton.addEventListener("click", playNextSong);
 prevButton.addEventListener("click", playPreviousSong);
 
+
+/*-----------------*/
+/*-Shuffle Mechanics-*/
+/*-----------------*/
+const shuffleButton = document.getElementById("shuffleButton");
+let isShuffle = false;
+
+// Toggle CSS effects when active
+shuffleButton.addEventListener("click", () => {
+  shuffleButton.classList.toggle("active");
+});
+
 function playNextSong() {
-  currentSongIndex = (currentSongIndex + 1) % songlist.length;
-  playSong(currentSongIndex);
+  if (isShuffle) {
+    const totalSongs = songlist.length;
+    const randomIndex = getRandomSongIndex(currentSongIndex, totalSongs);
+    playSong(randomIndex);
+  } else {
+    currentSongIndex = (currentSongIndex + 1) % songlist.length;
+    playSong(currentSongIndex);
+  }
 }
 
+// This function doesnt really work at the moment, if user is in shuffle mode it plays the wrong song
 function playPreviousSong() {
   currentSongIndex = (currentSongIndex - 1 + songlist.length) % songlist.length;
   playSong(currentSongIndex);
 }
+
+
+// Helper function to get a random song index different from the current index
+function getRandomSongIndex(currentIndex, totalSongs) {
+  let randomIndex;
+  do {
+    randomIndex = Math.floor(Math.random() * totalSongs);
+  } while (randomIndex === currentIndex); // Ensure the random index is different from the current index
+  return randomIndex;
+}
+
+shuffleButton.addEventListener("click", () => {
+  isShuffle = !isShuffle;
+  if (isShuffle) {
+    shuffleButton.classList.add("active");
+  } else {
+    shuffleButton.classList.remove("active");
+  }
+});

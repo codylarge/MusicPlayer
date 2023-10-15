@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const songList = document.getElementById("songList");
   const currentSong = document.getElementById("currentsong");
@@ -8,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add a click event listener to the song list container
   songList.addEventListener("click", function (e) {
     const target = e.target;
-    if (target.tagName === "LI" && song.listNum != 0) {
+    if (target.tagName === "LI" && target.listNum != 0) {
       if (lastClickedSongItem) {
         lastClickedSongItem.classList.remove("last-clicked");
       }

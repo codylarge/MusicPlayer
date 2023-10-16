@@ -208,6 +208,17 @@ audio {
   color: rgb(255, 0, 0);
   background-color: #7386a5;
 }
+
+footer {
+  color: #83d2f1; 
+  font-size: 14px;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center; 
+  padding: 10px; 
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 1150px) {
   .song-item {
     margin-inline: 15%;

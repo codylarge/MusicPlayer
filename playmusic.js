@@ -48,18 +48,15 @@ function playSong(index) {
 
   loadAndPlay(selectedSong, index);
 
-  // Adds the last clicked class to the new song thats playing
+  // Adds the last clicked class to the new song thats playings
   const currentSongItem = songList.querySelectorAll(".song-item")[index];
   if (currentSongItem) {
     currentSongItem.classList.add("last-clicked");
   }
 }
 
-function loadNextSong(index) {
-  getRandomSongIndex(index, )
-}
+let nextIndex = getRandomSongIndex(currentSongIndex, songlist.length);
 
-let nextIndex = 0;
 // Function to load and play a song - Loads audio data
 function loadAndPlay(audioSrc, index) {
   // Create a new Audio element to preload the next song
@@ -95,8 +92,6 @@ function loadAndPlay(audioSrc, index) {
 // Populate the song list dynamically using the imported songs array
 songlist.forEach(createSongListItem);
 
-// Uncomment this to play the first song when the page loads
-// playSong(0);
 
 // Add event listener to filter the song list based on user input
 searchInput.addEventListener("input", () => {
@@ -160,4 +155,5 @@ function getRandomSongIndex(currentIndex, totalSongs) {
 shuffleButton.addEventListener("click", () => {
   shuffleButton.classList.toggle("active");
   isShuffle = !isShuffle;
+  currentSongIndex = getRandomSongIndex(currentSongIndex, songlist.length);
 });

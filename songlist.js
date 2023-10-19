@@ -290,6 +290,7 @@ const songlist = [
 { src: "songs/Rainbow.mp3", name: "Rainbow", listNum: 7 },
 { src: "songs/ROCKSTAR GIRL.mp3", name: "ROCKSTAR GIRL", listNum: 7 },
 { src: "songs/RUN.mp3", name: "RUN", listNum: 7 },
+{ src: "songs/Slick Rick Freestyle.mp3", name: "Slick Rick Freestyle", listNum: 7 },
 { src: "songs/Something New.mp3", name: "Something New", listNum: 7 },
 { src: "songs/This Cant Be Happening.mp3", name: "This Cant Be Happening", listNum: 7 },
 { src: "songs/Until It's Over (Closure).mp3", name: "Until It's Over (Closure)", listNum: 7 },

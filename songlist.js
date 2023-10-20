@@ -1,6 +1,6 @@
 // Define an array of songs with their paths and names
 
-// listNum: 1: JW3  | 2: DRFL | 3: GB&GR | 4: 999 | 5: WRLD on Drugs | 6: Unsure | 7: Exclusives/Soundcloud | 0: Album title | 10: FIRST Album title
+// listNum: 1: JW3  | 2: DRFL | 3: GB&GR | 4: 999 | 5: WRLD on Drugs | 6: Unsure | 7: Exclusives/Soundcloud | 8: JTK | 0: Album title | 10: FIRST Album title
 const songlist = [
 
 { src: "", name: "WOD", listNum: 10 }, // Title Button
@@ -163,9 +163,7 @@ const songlist = [
   { src: "songs/Lonely.mp3", name: "Lonely", listNum: 6 },
   { src: "songs/Love Over There.mp3", name: "Love Over There", listNum: 6 },
   { src: "songs/Maybe (Master).mp3", name: "Maybe (Master)", listNum: 6 },
-  { src: "songs/No Reason.mp3", name: "No Reason", listNum: 6 },
   { src: "songs/Orange.mp3", name: "Orange", listNum: 6 },
-  { src: "songs/Only You On My Mind.mp3", name: "Only You On My Mind", listNum: 6 },
   { src: "songs/Purple Ocean.mp3", name: "Purple Ocean", listNum: 6 },
   { src: "songs/Red Moonlight.mp3", name: "Red Moonlight", listNum: 6 },
   { src: "songs/Split My Brain (808 Freestyle).mp3", name: "Split My Brain (808 Freestyle)", listNum: 6 },
@@ -503,6 +501,26 @@ const songlist = [
   { src: "songs/Triple 9 (999).mp3", name: "Triple 9 (999)", listNum: 4 },
   { src: "songs/Your Man (France).mp3", name: "Your Man (France)", listNum: 4 },
   //#endregion
+
+  
+  { src: "", name: "JTK", listNum: 0 }, // Title Button
+  { src: "songs/Aye Aye.mp3", name: "Aye Aye", listNum: 8 },
+  { src: "songs/Blowing Up.mp3", name: "Blowing Up", listNum: 8 },
+  { src: "songs/Different Phases.mp3", name: "Different Phases", listNum: 8 },
+  { src: "songs/Forever (Mrs. Miracle).mp3", name: "Forever (Mrs. Miracle)", listNum: 8 },
+  { src: "songs/I Don't Know.mp3", name: "I Don't Know", listNum: 8 },
+  { src: "songs/Lavender Town (feat. Zay Loco).mp3", name: "Lavender Town", listNum: 8 },
+  { src: "songs/No Reason.mp3", name: "No Reason", listNum: 8 },
+  { src: "songs/Oh My Oh My.mp3", name: "Oh My Oh My", listNum: 8 },
+  { src: "songs/Only You On My Mind.mp3", name: "Only You On My Mind", listNum: 8 },
+  { src: "songs/On The Rise (Count My Dough).mp3", name: "On The Rise", listNum: 8 },
+  { src: "songs/Over & Over.mp3", name: "Over & Over", listNum: 8 },
+  { src: "songs/Pesos.mp3", name: "Pesos", listNum: 8 },
+  { src: "songs/Ran Off.mp3", name: "Ran Off", listNum: 8 },
+  { src: "songs/Thoughts.mp3", name: "Thoughts", listNum: 8 },
+  { src: "songs/Surfin'.mp3", name: "Surfin'", listNum: 8 },
+  { src: "songs/Who Are You.mp3", name: "Who Are You", listNum: 8 },
+  //#region 999
 ];
 
 // Export the songs array for use in other scripts

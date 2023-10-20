@@ -194,6 +194,13 @@ audio {
   color: goldenrod;
 }
 
+#album-8 {
+  color: hotpink;
+}
+#album-8.last-clicked {
+  color: pink;
+}
+
 .song-item:hover {
   color: white;
   background-color: #394160;

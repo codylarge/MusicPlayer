@@ -1016,11 +1016,6 @@ const songlist = [
   { src: "songs/No Reason.mp3", name: "No Reason", listNum: 8 },
   { src: "songs/Oh My Oh My.mp3", name: "Oh My Oh My", listNum: 8 },
   {
-    src: "songs/Only You On My Mind.mp3",
-    name: "Only You On My Mind",
-    listNum: 8,
-  },
-  {
     src: "songs/On The Rise (Count My Dough).mp3",
     name: "On The Rise",
     listNum: 8,
@@ -1038,6 +1033,11 @@ const songlist = [
   { src: "songs/Dropout.mp3", name: "Dropout", listNum: 6 }, // 2017
   { src: "songs/Let's Go.mp3", name: "Let's Go", listNum: 6 }, // Not sure
   { src: "songs/Maybe (Master).mp3", name: "Maybe (Master)", listNum: 6 }, // Stem
+  {
+    src: "songs/Only You On My Mind.mp3",
+    name: "Only You On My Mind",
+    listNum: 6,
+  }, // 2017
 
   //#endregion
 ];

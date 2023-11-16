@@ -60,7 +60,7 @@ let nextIndex = getRandomSongIndex(currentSongIndex, songlist.length);
 // Function to load and play a song - Loads audio data
 function loadAndPlay(audioSrc, index) {
   // Create a new Audio element to preload the next song
-  if(isShuffle){
+  if (isShuffle) {
     nextIndex = getRandomSongIndex(index, songlist.length);
   } else {
     nextIndex = (index + 1) % songlist.length;
@@ -92,7 +92,6 @@ function loadAndPlay(audioSrc, index) {
 // Populate the song list dynamically using the imported songs array
 songlist.forEach(createSongListItem);
 
-
 // Add event listener to filter the song list based on user input
 searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value.toLowerCase();
@@ -114,7 +113,6 @@ audio.addEventListener("ended", () => {
   playSong(currentSongIndex);
 });
 
-
 /*-----------------*/
 /*-Song Navigation-*/
 /*-----------------*/
@@ -125,7 +123,6 @@ const prevButton = document.getElementById("prevButton");
 nextButton.addEventListener("click", playNextSong);
 prevButton.addEventListener("click", playPreviousSong);
 
-
 /*-------------------*/
 /*-Shuffle Mechanics-*/
 /*-------------------*/
@@ -133,7 +130,7 @@ const shuffleButton = document.getElementById("shuffleButton");
 let isShuffle = false;
 
 function playNextSong() {
-    playSong(nextIndex);
+  playSong(nextIndex);
 }
 
 // This function doesnt really work at the moment, if user is in shuffle mode it plays the wrong song
@@ -141,7 +138,6 @@ function playPreviousSong() {
   currentSongIndex = (currentSongIndex - 1 + songlist.length) % songlist.length;
   playSong(currentSongIndex);
 }
-
 
 // Helper function to get a random song index different from the current index
 function getRandomSongIndex(currentIndex, totalSongs) {

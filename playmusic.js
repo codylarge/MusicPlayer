@@ -5,11 +5,13 @@ import songlist from "./songlist.js";
 
 // Get references to important HTML elements
 const audio = document.getElementById("myAudio");
+audio.src = "";
 const songList = document.getElementById("songList");
 const searchInput = document.getElementById("search");
 const currentSong = document.getElementById("currentsong");
 
 let currentSongIndex = 0;
+let lastSongIndex = 0;
 
 // Function to create and append a list item for each song
 function createSongListItem(song, index, listNum) {
@@ -34,10 +36,6 @@ function playSong(index) {
   if (!audio.paused) {
     audio.pause();
   }
-
-  // Clear the audio source to stop the current playback
-  audio.src = "";
-
   // Get the previously played song and remove its CSS style
   const previouslyPlayedSong = document.querySelector(
     ".song-item.last-clicked"
@@ -135,8 +133,12 @@ function playNextSong() {
 
 // This function doesnt really work at the moment, if user is in shuffle mode it plays the wrong song
 function playPreviousSong() {
-  currentSongIndex = (currentSongIndex - 1 + songlist.length) % songlist.length;
-  playSong(currentSongIndex);
+  if (isShuffle) {
+  } else {
+    currentSongIndex =
+      (currentSongIndex - 1 + songlist.length) % songlist.length;
+    playSong(currentSongIndex);
+  }
 }
 
 // Helper function to get a random song index different from the current index

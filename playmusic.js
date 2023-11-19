@@ -12,6 +12,7 @@ const currentSong = document.getElementById("currentsong");
 
 let currentSongIndex = 0;
 let lastSongIndex = 0;
+let nextIndex = getRandomSongIndex(currentSongIndex, songlist.length);
 
 // Function to create and append a list item for each song
 function createSongListItem(song, index, listNum) {
@@ -44,6 +45,7 @@ function playSong(index) {
     previouslyPlayedSong.classList.remove("last-clicked"); // removes the "last clicked class" from the element
   }
 
+  lastSongIndex = currentSongIndex;
   loadAndPlay(selectedSong, index);
 
   // Adds the last clicked class to the new song thats playings
@@ -52,8 +54,6 @@ function playSong(index) {
     currentSongItem.classList.add("last-clicked");
   }
 }
-
-let nextIndex = getRandomSongIndex(currentSongIndex, songlist.length);
 
 // Function to load and play a song - Loads audio data
 function loadAndPlay(audioSrc, index) {
@@ -134,6 +134,7 @@ function playNextSong() {
 // This function doesnt really work at the moment, if user is in shuffle mode it plays the wrong song
 function playPreviousSong() {
   if (isShuffle) {
+    playSong(lastSongIndex);
   } else {
     currentSongIndex =
       (currentSongIndex - 1 + songlist.length) % songlist.length;

@@ -135,6 +135,7 @@ function playNextSong() {
 function playPreviousSong() {
   if (isShuffle) {
     playSong(lastSongIndex);
+    nextIndex = lastSongIndex;
   } else {
     currentSongIndex =
       (currentSongIndex - 1 + songlist.length) % songlist.length;

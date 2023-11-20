@@ -17,6 +17,9 @@ let nextIndex = getRandomSongIndex(currentSongIndex, songlist.length);
 
 // Function to create and append a list item for each song
 function createSongListItem(song, index, listNum) {
+  /*if (listNum === 10 || listNum === 0) {
+    const albumHeader = document.createElement("ul");
+  }*/
   const listItem = document.createElement("li");
   listItem.textContent = song.name;
   listItem.classList.add("song-item");

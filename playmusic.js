@@ -1,14 +1,15 @@
 import songlist from "./songlist.js";
 
-// TODO: ADD SHUFFLE FEATURE
-// TODO: Seperate song playing operations into different js file as song changing/moving
-
 // Get references to important HTML elements
 const audio = document.getElementById("myAudio");
 audio.src = "";
 const songList = document.getElementById("songList");
 const searchInput = document.getElementById("search");
 const currentSong = document.getElementById("currentsong");
+
+let loadedSongIndexes = new Array(songlist.length);
+let numLoadedSongs = 0;
+let currentSongInList = -1;
 
 let currentSongIndex = 0;
 let lastSongIndex = 0;
@@ -45,12 +46,22 @@ function playSong(index) {
     previouslyPlayedSong.classList.remove("last-clicked"); // removes the "last clicked class" from the element
   }
 
-  lastSongIndex = currentSongIndex;
   loadAndPlay(selectedSong, index);
 
   // Adds the last clicked class to the new song thats playings
   const currentSongItem = songList.querySelectorAll(".song-item")[index];
+  // If song was successfully played
   if (currentSongItem) {
+    if (loadedSongIndexes.includes(index)) {
+      console.log("song already loaded");
+    } else {
+      loadedSongIndexes[numLoadedSongs] = index;
+      numLoadedSongs++;
+      currentSongInList++;
+      lastSongIndex = currentSongIndex;
+
+      //console.log(numLoadedSongs);
+    }
     currentSongItem.classList.add("last-clicked");
   }
 }
@@ -74,6 +85,7 @@ function loadAndPlay(audioSrc, index) {
 
   // Listen for the "canplaythrough" event to ensure audio data is loaded before attempting to play
   preloadAudio.addEventListener("canplaythrough", () => {
+    // TODO: This event listener is causing issues when next button is spammed
     audio.src = audioSrc;
     audio.play();
 
@@ -128,13 +140,21 @@ const shuffleButton = document.getElementById("shuffleButton");
 let isShuffle = false;
 
 function playNextSong() {
-  playSong(nextIndex);
+  // If user is on the first song play a new song
+  if (currentSongInList === numLoadedSongs - 1) {
+    playSong(nextIndex);
+  } else {
+    // Else user is on a song they got to using the back arrow
+    currentSongInList++;
+    playSong(loadedSongIndexes[currentSongInList]);
+  }
 }
 
 // This function doesnt really work at the moment, if user is in shuffle mode it plays the wrong song
 function playPreviousSong() {
   if (isShuffle) {
-    playSong(lastSongIndex);
+    if (currentSongInList > 0) currentSongInList--;
+    playSong(loadedSongIndexes[currentSongInList]);
     nextIndex = lastSongIndex;
   } else {
     currentSongIndex =
@@ -155,5 +175,7 @@ function getRandomSongIndex(currentIndex, totalSongs) {
 shuffleButton.addEventListener("click", () => {
   shuffleButton.classList.toggle("active");
   isShuffle = !isShuffle;
-  currentSongIndex = getRandomSongIndex(currentSongIndex, songlist.length);
+  if (isShuffle)
+    nextIndex = getRandomSongIndex(currentSongIndex, songlist.length);
+  else nextIndex = (currentSongIndex + 1) % songlist.length;
 });

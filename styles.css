@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&family=Permanent+Marker&display=swap');
+
 #currentsong {
   color:white;
-  font-family: helvetica, sans-serif;
+  font-family: 'Permanent Marker', cursive;
   font-weight: bold;
   text-shadow: 3px 3px 1px black;
 }
@@ -53,7 +55,7 @@
 
 body {
   user-select: none;
-  background-image: url("images/Background\ Full\ Res\ Black.jpg");
+  background-image: url("images/background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -201,6 +203,13 @@ audio {
   color: pink;
 }
 
+#album-9 {
+  color: rgb(255, 0, 212);
+}
+#album-9.last-clicked {
+  color: rgb(255, 132, 234);
+}
+
 .song-item:hover {
   color: white;
   background-color: #394160;
@@ -226,7 +235,16 @@ footer {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1400px) {
+  .song-item {
+    margin-inline: -5px;
+  }
+  #songList {
+    column-count: 2;
+  }
+} 
+
+@media (max-width: 1000px) {
   .song-item {
     margin-inline: 15%;
   }

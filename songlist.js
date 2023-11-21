@@ -1,8 +1,20 @@
 // Define an array of songs with their paths and names
 
-// listNum: 1: JW3  | 2: DRFL | 3: GB&GR | 4: 999 | 5: WRLD on Drugs | 6: Unsure | 7: Exclusives/Soundcloud | 8: JTK | 0: Album title | 10: FIRST Album title
+// listNum: 1: JW3  | 2: DRFL | 3: GB&GR | 4: 999 | 5: WRLD on Drugs | 6: Unsure | 7: Exclusives/Soundcloud | 8: JTK | 9: New | 0: Album title | 10: FIRST Album title
 const songlist = [
-  { src: "", name: "WOD", listNum: 10 }, // Title Button
+  { src: "", name: "NEW", listNum: 10 }, // Title Button
+  {
+    src: "songs/Lobster Pizza.mp3",
+    name: "Lobster Pizza (Chainsmokers)",
+    listNum: 9,
+  },
+  { src: "songs/Go Away.mp3", name: "Go Away", listNum: 9 },
+  { src: "songs/Classy.mp3", name: "Classy", listNum: 9 },
+  { src: "songs/Hope I Did It.mp3", name: "Hope I Did It", listNum: 9 },
+  { src: "songs/Get Excited.mp3", name: "Get Excited", listNum: 9 },
+  { src: "songs/Watcha On.mp3", name: "Watcha On", listNum: 9 },
+
+  { src: "", name: "WOD", listNum: 0 }, // Title Button
   //#region WOD
   { src: "songs/24 Hours.mp3", name: "24 Hours", listNum: 5 },
   {

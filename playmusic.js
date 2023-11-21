@@ -7,6 +7,7 @@ const songList = document.getElementById("songList");
 const searchInput = document.getElementById("search");
 const currentSong = document.getElementById("currentsong");
 
+// These variables are used to track the order of songs being played so that back and forward arrows are consistent
 let loadedSongIndexes = new Array(songlist.length);
 let numLoadedSongs = 0;
 let currentSongInList = -1;
@@ -17,14 +18,13 @@ let nextIndex = getRandomSongIndex(currentSongIndex, songlist.length);
 
 // Function to create and append a list item for each song
 function createSongListItem(song, index, listNum) {
-  /*if (listNum === 10 || listNum === 0) {
+  const album = song.listNum;
+  if (album === 10 || album === 0) {
     const albumHeader = document.createElement("ul");
-  }*/
+  }
   const listItem = document.createElement("li");
   listItem.textContent = song.name;
   listItem.classList.add("song-item");
-
-  const album = song.listNum;
 
   listItem.setAttribute("id", `album-${album}`);
 
@@ -53,6 +53,7 @@ function playSong(index) {
 
   // Adds the last clicked class to the new song thats playings
   const currentSongItem = songList.querySelectorAll(".song-item")[index];
+
   // If song was successfully played
   if (currentSongItem) {
     if (loadedSongIndexes.includes(index)) {
@@ -62,7 +63,6 @@ function playSong(index) {
       numLoadedSongs++;
       currentSongInList++;
       lastSongIndex = currentSongIndex;
-
       //console.log(numLoadedSongs);
     }
     currentSongItem.classList.add("last-clicked");
@@ -105,20 +105,6 @@ function loadAndPlay(audioSrc, index) {
 // Populate the song list dynamically using the imported songs array
 songlist.forEach(createSongListItem);
 
-// Add event listener to filter the song list based on user input
-searchInput.addEventListener("input", () => {
-  const searchTerm = searchInput.value.toLowerCase();
-  const songs = songList.getElementsByTagName("li");
-
-  for (let i = 0; i < songs.length; i++) {
-    const song = songs[i];
-    const songName = song.textContent.toLowerCase();
-
-    // Display or hide songs based on the search term
-    song.style.display = songName.includes(searchTerm) ? "block" : "none";
-  }
-});
-
 // Add event listener to play the next song when the current song ends
 audio.addEventListener("ended", () => {
   // Increment the index to play the next song (looping back to the first if needed)
@@ -141,6 +127,14 @@ prevButton.addEventListener("click", playPreviousSong);
 /*-------------------*/
 const shuffleButton = document.getElementById("shuffleButton");
 let isShuffle = false;
+
+shuffleButton.addEventListener("click", () => {
+  shuffleButton.classList.toggle("active");
+  isShuffle = !isShuffle;
+  if (isShuffle)
+    nextIndex = getRandomSongIndex(currentSongIndex, songlist.length);
+  else nextIndex = (currentSongIndex + 1) % songlist.length;
+});
 
 function playNextSong() {
   // If user is on the first song play a new song
@@ -175,10 +169,19 @@ function getRandomSongIndex(currentIndex, totalSongs) {
   return randomIndex;
 }
 
-shuffleButton.addEventListener("click", () => {
-  shuffleButton.classList.toggle("active");
-  isShuffle = !isShuffle;
-  if (isShuffle)
-    nextIndex = getRandomSongIndex(currentSongIndex, songlist.length);
-  else nextIndex = (currentSongIndex + 1) % songlist.length;
+/*-------------------*/
+/* SEARCH */
+/*-------------------*/
+// Add event listener to filter the song list based on user input
+searchInput.addEventListener("input", () => {
+  const searchTerm = searchInput.value.toLowerCase();
+  const songs = songList.getElementsByTagName("li");
+
+  for (let i = 0; i < songs.length; i++) {
+    const song = songs[i];
+    const songName = song.textContent.toLowerCase();
+
+    // Display or hide songs based on the search term
+    song.style.display = songName.includes(searchTerm) ? "block" : "none";
+  }
 });

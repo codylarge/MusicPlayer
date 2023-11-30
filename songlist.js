@@ -3,6 +3,7 @@
 // listNum: 1: JW3  | 2: DRFL | 3: GB&GR | 4: 999 | 5: WRLD on Drugs | 6: Unsure | 7: Exclusives/Soundcloud | 8: JTK | 9: New | 0: Album title | 10: FIRST Album title
 const songlist = [
   { src: "", name: "NEW", listNum: 10 }, // Title Button
+  { src: "songs/Paranoia Highs (USD).mp3", name: "Paranoia Highs", listNum: 9 },
   {
     src: "songs/Lobster Pizza.mp3",
     name: "Lobster Pizza (Chainsmokers)",

@@ -14,6 +14,7 @@ const songlist = [
   { src: "songs/Believe In Me.mp3", name: "Believe In Me", listNum: 9 },
   { src: "songs/Clout.mp3", name: "Clout", listNum: 9 },
   { src: "songs/Paranoia Highs (USD).mp3", name: "Paranoia Highs", listNum: 9 },
+  { src: "songs/No Stopping Us.mp3", name: "No Stopping Us", listNum: 9 },
   {
     src: "songs/Lobster Pizza.mp3",
     name: "Lobster Pizza (Chainsmokers)",

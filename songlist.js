@@ -3,6 +3,16 @@
 // listNum: 1: JW3  | 2: DRFL | 3: GB&GR | 4: 999 | 5: WRLD on Drugs | 6: Unsure | 7: Exclusives/Soundcloud | 8: JTK | 9: New | 0: Album title | 10: FIRST Album title
 const songlist = [
   { src: "", name: "NEW", listNum: 10 }, // Title Button
+  { src: "songs/Happy Life.mp3", name: "Happy Life", listNum: 9 },
+  { src: "songs/Dark Tints.mp3", name: "Dark Tints", listNum: 9 },
+  {
+    src: "songs/Forever ft Ty Dolla $ign.mp3",
+    name: "Forever ft Ty Dolla $ign",
+    listNum: 9,
+  },
+  { src: "songs/Late Night.mp3", name: "Late Night", listNum: 9 },
+  { src: "songs/Believe In Me.mp3", name: "Believe In Me", listNum: 9 },
+  { src: "songs/Clout.mp3", name: "Clout", listNum: 9 },
   { src: "songs/Paranoia Highs (USD).mp3", name: "Paranoia Highs", listNum: 9 },
   {
     src: "songs/Lobster Pizza.mp3",

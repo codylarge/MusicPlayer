@@ -3,26 +3,26 @@
 // listNum: 1: JW3  | 2: DRFL | 3: GB&GR | 4: 999 | 5: WRLD on Drugs | 6: Unsure | 7: Exclusives/Soundcloud | 8: JTK | 9: New | 0: Album title | 10: FIRST Album title
 const songlist = [
   //#region NEW
-  { src: "", name: "NEW PICKS", listNum: 10 }, // Title Button
+  //{ src: "", name: "NEW PICKS", listNum: 10 }, // Title Button
 
   //#endregion
 
-  { src: "", name: "WOD", listNum: 0 }, // Title Button
+  { src: "", name: "WOD", listNum: 10 }, // Title Button
   //#region WOD
   // New Songs
-  { src: "songs/For Fun.mp3", name: "For Fun", listNum: 9 },
-  { src: "songs/Island.mp3", name: "Island", listNum: 9 },
-  { src: "songs/Lemon Glow.mp3", name: "Lemon Glow", listNum: 9 },
-  { src: "songs/Like a Riff.mp3", name: "Like a Riff", listNum: 9 },
+  { src: "songs/For Fun.mp3", name: "For Fun", listNum: 5 },
+  { src: "songs/Island.mp3", name: "Island", listNum: 5 },
+  { src: "songs/Lemon Glow.mp3", name: "Lemon Glow", listNum: 5 },
+  { src: "songs/Like a Riff.mp3", name: "Like a Riff", listNum: 5 },
   {
     src: "songs/Livin Life.mp3",
     name: "Livin Life (ft. Lil Yachty)",
-    listNum: 9,
+    listNum: 5,
   },
   {
     src: "songs/Lobster Pizza.mp3",
     name: "Lobster Pizza (Chainsmokers)",
-    listNum: 9,
+    listNum: 5,
   },
   { src: "songs/24 Hours.mp3", name: "24 Hours", listNum: 5 },
   {
@@ -423,17 +423,17 @@ const songlist = [
   { src: "", name: "JW3", listNum: 0 }, // Title Button (-1 because its at the top of the page and needs a unique id)
   //#region JW3
   // New
-  { src: "songs/Chase My Thrills.mp3", name: "Chase My Thrills", listNum: 9 },
-  { src: "songs/Classy.mp3", name: "Classy", listNum: 9 },
-  { src: "songs/Get Excited.mp3", name: "Get Excited", listNum: 9 },
-  { src: "songs/Go Away.mp3", name: "Go Away", listNum: 9 },
-  { src: "songs/Maserati.mp3", name: "Maserati", listNum: 9 },
-  { src: "songs/No Stopping Us.mp3", name: "No Stopping Us", listNum: 9 },
-  { src: "songs/Not Ashamed.mp3", name: "Not Ashamed", listNum: 9 },
-  { src: "songs/Pray For Me.mp3", name: "Pray For Me", listNum: 9 },
-  { src: "songs/Saved By The Bell.mp3", name: "Saved By The Bell", listNum: 9 },
-  { src: "songs/Paranoia Highs (USD).mp3", name: "USD", listNum: 9 },
-  { src: "songs/Watcha On.mp3", name: "Watcha On", listNum: 9 },
+  { src: "songs/Chase My Thrills.mp3", name: "Chase My Thrills", listNum: 1 },
+  { src: "songs/Classy.mp3", name: "Classy", listNum: 1 },
+  { src: "songs/Get Excited.mp3", name: "Get Excited", listNum: 1 },
+  { src: "songs/Go Away.mp3", name: "Go Away", listNum: 1 },
+  { src: "songs/Maserati.mp3", name: "Maserati", listNum: 1 },
+  { src: "songs/No Stopping Us.mp3", name: "No Stopping Us", listNum: 1 },
+  { src: "songs/Not Ashamed.mp3", name: "Not Ashamed", listNum: 1 },
+  { src: "songs/Pray For Me.mp3", name: "Pray For Me", listNum: 1 },
+  { src: "songs/Saved By The Bell.mp3", name: "Saved By The Bell", listNum: 1 },
+  { src: "songs/Paranoia Highs (USD).mp3", name: "USD", listNum: 1 },
+  { src: "songs/Watcha On.mp3", name: "Watcha On", listNum: 1 },
 
   { src: "songs/38 Special.mp3", name: ".38 Special", listNum: 1 },
   { src: "songs/Adore You.mp3", name: "Adore You", listNum: 1 },
@@ -623,22 +623,22 @@ const songlist = [
   { src: "", name: "DRFL", listNum: 0 }, // Title Button
   //#region DRFL
   // New Songs
-  { src: "songs/Afterlife.mp3", name: "Afterlife", listNum: 9 },
-  { src: "songs/Chase My Highs.mp3", name: "Chase My Highs", listNum: 9 },
-  { src: "songs/Happy Life.mp3", name: "Happy Life", listNum: 9 },
+  { src: "songs/Afterlife.mp3", name: "Afterlife", listNum: 2 },
+  { src: "songs/Chase My Highs.mp3", name: "Chase My Highs", listNum: 2 },
+  { src: "songs/Happy Life.mp3", name: "Happy Life", listNum: 2 },
   {
     src: "songs/Her And Her Beauty.mp3",
     name: "Her And Her Beauty",
-    listNum: 9,
+    listNum: 2,
   },
   {
     src: "songs/Hold It Down (Highschool).mp3",
     name: "Hold It Down (Highschool)",
-    listNum: 9,
+    listNum: 2,
   },
-  { src: "songs/Hope I Did It.mp3", name: "Hope I Did It", listNum: 9 },
-  { src: "songs/Lost In My Head.mp3", name: "Lost In My Head", listNum: 9 },
-  { src: "songs/Road Rage.mp3", name: "Road Rage", listNum: 9 },
+  { src: "songs/Hope I Did It.mp3", name: "Hope I Did It", listNum: 2 },
+  { src: "songs/Lost In My Head.mp3", name: "Lost In My Head", listNum: 2 },
+  { src: "songs/Road Rage.mp3", name: "Road Rage", listNum: 2 },
 
   { src: "songs/2019 My Year.mp3", name: "2019 My Year", listNum: 2 },
   { src: "songs/4 Instance.mp3", name: "4 Instance", listNum: 2 },
@@ -837,24 +837,24 @@ const songlist = [
   {
     src: "songs/Chemical Imbalance (Sessions).mp3",
     name: "Chemical Imbalance",
-    listNum: 9,
+    listNum: 3,
   },
   {
     src: "songs/Curse from an Angel.mp3",
     name: "Curse from an Angel",
-    listNum: 9,
+    listNum: 3,
   },
   {
     src: "songs/Love Over There (v2).mp3",
     name: "Walking In The Sand",
-    listNum: 9,
+    listNum: 3,
   },
-  { src: "songs/On Me.mp3", name: "On Me", listNum: 9 },
-  { src: "songs/Start It Up.mp3", name: "Start It Up", listNum: 9 },
+  { src: "songs/On Me.mp3", name: "On Me", listNum: 3 },
+  { src: "songs/Start It Up.mp3", name: "Start It Up", listNum: 3 },
   {
     src: "songs/Thousand Cliffs (Intended).mp3",
     name: "Thousand Cliffs (Intended)",
-    listNum: 9,
+    listNum: 3,
   },
   { src: "songs/27 Club.mp3", name: "27 Club", listNum: 3 },
   { src: "songs/6.mp3", name: "6", listNum: 3 },
@@ -1048,8 +1048,8 @@ const songlist = [
   { src: "", name: "999", listNum: 0 }, // Title Button
   //#region 999
   // New Songs
-  { src: "songs/Going MIA.mp3", name: "Going MIA", listNum: 9 },
-  { src: "songs/Believe In Me.mp3", name: "Believe In Me", listNum: 9 },
+  { src: "songs/Going MIA.mp3", name: "Going MIA", listNum: 4 },
+  { src: "songs/Believe In Me.mp3", name: "Believe In Me", listNum: 4 },
 
   { src: "songs/All Burnt Up.mp3", name: "All Burnt Up", listNum: 4 },
   { src: "songs/Already (v1).mp3", name: "Already (v1)", listNum: 4 },
@@ -1079,9 +1079,9 @@ const songlist = [
   {
     src: "songs/Xan Xan Xan (XXX) ft GDo.mp3",
     name: "Xan Xan Xan (XXX) ft GDo",
-    listNum: 9,
+    listNum: 8,
   },
-  { src: "songs/Right Left.mp3", name: "Right Left", listNum: 9 },
+  { src: "songs/Right Left.mp3", name: "Right Left", listNum: 8 },
 
   { src: "songs/Aye Aye.mp3", name: "Aye Aye", listNum: 8 },
   { src: "songs/Blowing Up.mp3", name: "Blowing Up", listNum: 8 },

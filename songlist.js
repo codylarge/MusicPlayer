@@ -623,6 +623,7 @@ const songlist = [
   { src: "", name: "DRFL", listNum: 0 }, // Title Button
   //#region DRFL
   // New Songs
+  { src: "songs/Forever (OG).mp3", name: "Forever(OG)", listNum: 2 },
   { src: "songs/Afterlife.mp3", name: "Afterlife", listNum: 2 },
   { src: "songs/Chase My Highs.mp3", name: "Chase My Highs", listNum: 2 },
   { src: "songs/Happy Life.mp3", name: "Happy Life", listNum: 2 },

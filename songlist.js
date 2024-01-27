@@ -9,21 +9,6 @@ const songlist = [
 
   { src: "", name: "WOD", listNum: 10 }, // Title Button
   //#region WOD
-  // New Songs
-  { src: "songs/For Fun.mp3", name: "For Fun", listNum: 5 },
-  { src: "songs/Island.mp3", name: "Island", listNum: 5 },
-  { src: "songs/Lemon Glow.mp3", name: "Lemon Glow", listNum: 5 },
-  { src: "songs/Like a Riff.mp3", name: "Like a Riff", listNum: 5 },
-  {
-    src: "songs/Livin Life.mp3",
-    name: "Livin Life (ft. Lil Yachty)",
-    listNum: 5,
-  },
-  {
-    src: "songs/Lobster Pizza.mp3",
-    name: "Lobster Pizza (Chainsmokers)",
-    listNum: 5,
-  },
   { src: "songs/24 Hours.mp3", name: "24 Hours", listNum: 5 },
   {
     src: "songs/8 Minute Freestyle.mp3",
@@ -158,6 +143,7 @@ const songlist = [
     name: "Flossin' (Zero Toleration)",
     listNum: 5,
   },
+  { src: "songs/For Fun.mp3", name: "For Fun", listNum: 5 },
   {
     src: "songs/For The Weekend (Facetious) (feat. G Herbo).mp3",
     name: "Facetious (feat. G Herbo)",
@@ -232,12 +218,13 @@ const songlist = [
     name: "Irony (Inspire Me)",
     listNum: 5,
   },
-  { src: "songs/I Want It (v1).mp3", name: "I Want It (v1)", listNum: 5 },
+  { src: "songs/Island.mp3", name: "Island", listNum: 5 },
   {
     src: "songs/It Ain't So (Personification).mp3",
     name: "It Ain't So (Personification)",
     listNum: 5,
   },
+  { src: "songs/I Want It (v1).mp3", name: "I Want It (v1)", listNum: 5 },
   {
     src: "songs/I Wonder (My Mind).mp3",
     name: "I Wonder (My Mind)",
@@ -250,7 +237,19 @@ const songlist = [
   },
   { src: "songs/KKK (2018).mp3", name: "KKK (2018)", listNum: 5 },
   { src: "songs/Kiki (King Kong).mp3", name: "Kiki (King Kong)", listNum: 5 },
+  { src: "songs/Lemon Glow.mp3", name: "Lemon Glow", listNum: 5 },
   { src: "songs/Life's A Movie.mp3", name: "Life's A Movie", listNum: 5 },
+  { src: "songs/Like a Riff.mp3", name: "Like a Riff", listNum: 5 },
+  {
+    src: "songs/Livin Life.mp3",
+    name: "Livin Life (ft. Lil Yachty)",
+    listNum: 5,
+  },
+  {
+    src: "songs/Lobster Pizza.mp3",
+    name: "Lobster Pizza (Chainsmokers)",
+    listNum: 5,
+  },
   { src: "songs/Luigi (Twins).mp3", name: "Luigi (Twins)", listNum: 5 },
   { src: "songs/Matte Black.mp3", name: "Matte Black", listNum: 5 },
   { src: "songs/Mental Overload.mp3", name: "Mental Overload", listNum: 5 },
@@ -423,18 +422,6 @@ const songlist = [
   { src: "", name: "JW3", listNum: 0 }, // Title Button (-1 because its at the top of the page and needs a unique id)
   //#region JW3
   // New
-  { src: "songs/Chase My Thrills.mp3", name: "Chase My Thrills", listNum: 1 },
-  { src: "songs/Classy.mp3", name: "Classy", listNum: 1 },
-  { src: "songs/Get Excited.mp3", name: "Get Excited", listNum: 1 },
-  { src: "songs/Go Away.mp3", name: "Go Away", listNum: 1 },
-  { src: "songs/Maserati.mp3", name: "Maserati", listNum: 1 },
-  { src: "songs/No Stopping Us.mp3", name: "No Stopping Us", listNum: 1 },
-  { src: "songs/Not Ashamed.mp3", name: "Not Ashamed", listNum: 1 },
-  { src: "songs/Pray For Me.mp3", name: "Pray For Me", listNum: 1 },
-  { src: "songs/Saved By The Bell.mp3", name: "Saved By The Bell", listNum: 1 },
-  { src: "songs/Paranoia Highs (USD).mp3", name: "USD", listNum: 1 },
-  { src: "songs/Watcha On.mp3", name: "Watcha On", listNum: 1 },
-
   { src: "songs/38 Special.mp3", name: ".38 Special", listNum: 1 },
   { src: "songs/Adore You.mp3", name: "Adore You", listNum: 1 },
   {
@@ -476,7 +463,9 @@ const songlist = [
   { src: "songs/Californication.mp3", name: "Californication", listNum: 1 },
   { src: "songs/Can't Be Saved.mp3", name: "Can't Be Saved", listNum: 1 },
   { src: "songs/Carry It.mp3", name: "Carry It", listNum: 1 },
+  { src: "songs/Chase My Thrills.mp3", name: "Chase My Thrills", listNum: 1 },
   { src: "songs/Chrome.mp3", name: "Chrome", listNum: 1 },
+  { src: "songs/Classy.mp3", name: "Classy", listNum: 1 },
   { src: "songs/Coraline.mp3", name: "Coraline", listNum: 1 },
   { src: "songs/Cursed Heart.mp3", name: "Cursed Heart", listNum: 1 },
   {
@@ -502,6 +491,8 @@ const songlist = [
   { src: "songs/Floor It.mp3", name: "Floor It", listNum: 1 },
   { src: "songs/Don't Forget Me.mp3", name: "Forget Me Not", listNum: 1 },
   { src: "songs/Forever Love.mp3", name: "Forever Love", listNum: 1 },
+  { src: "songs/Get Excited.mp3", name: "Get Excited", listNum: 1 },
+  { src: "songs/Go Away.mp3", name: "Go Away", listNum: 1 },
   {
     src: "songs/Good Times (feat. Kid Cudi).mp3",
     name: "Good Times (feat. Kid Cudi)",
@@ -557,15 +548,24 @@ const songlist = [
     name: "Man Down (Rockstar Boy)",
     listNum: 1,
   },
+  { src: "songs/Maserati.mp3", name: "Maserati", listNum: 1 },
   { src: "songs/Murder Rate.mp3", name: "Murder Rate", listNum: 1 },
   { src: "songs/My Year.mp3", name: "My Year", listNum: 1 },
   { src: "songs/NLMB (Oh Dear).mp3", name: "NLMB (Oh Dear)", listNum: 1 },
   { src: "songs/No Laces.mp3", name: "No Laces", listNum: 1 },
+  { src: "songs/No Stopping Us.mp3", name: "No Stopping Us", listNum: 1 },
+  { src: "songs/Not Ashamed.mp3", name: "Not Ashamed", listNum: 1 },
   { src: "songs/No Trespassing.mp3", name: "No Trespassing", listNum: 1 },
   { src: "songs/No Wrong.mp3", name: "No Wrong", listNum: 1 },
   { src: "songs/On Time.mp3", name: "On Time", listNum: 1 },
   { src: "songs/Overseer.mp3", name: "Overseer (Omen)", listNum: 1 },
   { src: "songs/Oversprung.mp3", name: "Over Sprung", listNum: 1 },
+  {
+    src: "songs/Paranoia Highs (USD).mp3",
+    name: "Paranoia Highs(USD)",
+    listNum: 1,
+  },
+  { src: "songs/Pray For Me.mp3", name: "Pray For Me", listNum: 1 },
   {
     src: "songs/Priceless (Wraith).mp3",
     name: "Priceless (Wraith)",
@@ -578,6 +578,7 @@ const songlist = [
   { src: "songs/Red Moonlight.mp3", name: "Red Moonlight", listNum: 1 },
   { src: "songs/Rich Forever.mp3", name: "Rich Forever", listNum: 1 },
   { src: "songs/Rikers.mp3", name: "Rikers", listNum: 1 },
+  { src: "songs/Saved By The Bell.mp3", name: "Saved By The Bell", listNum: 1 },
   {
     src: "songs/Scarface (feat. Gunna).mp3",
     name: "Scarface (feat. Gunna)",
@@ -605,6 +606,7 @@ const songlist = [
   },
   { src: "songs/Until I Die.mp3", name: "Until I Die", listNum: 1 },
   { src: "songs/My Way Home (Pt. 2).mp3", name: "Used And Abused", listNum: 1 },
+  { src: "songs/Watcha On.mp3", name: "Watcha On", listNum: 1 },
   { src: "songs/Way Too Many.mp3", name: "Way Too Many", listNum: 1 },
   {
     src: "songs/We Don't Get Along.mp3",
@@ -622,24 +624,7 @@ const songlist = [
 
   { src: "", name: "DRFL", listNum: 0 }, // Title Button
   //#region DRFL
-  // New Songs
   { src: "songs/Forever (OG).mp3", name: "Forever(OG)", listNum: 2 },
-  { src: "songs/Afterlife.mp3", name: "Afterlife", listNum: 2 },
-  { src: "songs/Chase My Highs.mp3", name: "Chase My Highs", listNum: 2 },
-  { src: "songs/Happy Life.mp3", name: "Happy Life", listNum: 2 },
-  {
-    src: "songs/Her And Her Beauty.mp3",
-    name: "Her And Her Beauty",
-    listNum: 2,
-  },
-  {
-    src: "songs/Hold It Down (Highschool).mp3",
-    name: "Hold It Down (Highschool)",
-    listNum: 2,
-  },
-  { src: "songs/Hope I Did It.mp3", name: "Hope I Did It", listNum: 2 },
-  { src: "songs/Lost In My Head.mp3", name: "Lost In My Head", listNum: 2 },
-  { src: "songs/Road Rage.mp3", name: "Road Rage", listNum: 2 },
 
   { src: "songs/2019 My Year.mp3", name: "2019 My Year", listNum: 2 },
   { src: "songs/4 Instance.mp3", name: "4 Instance", listNum: 2 },
@@ -649,6 +634,10 @@ const songlist = [
     name: "90210 (Speed Demon)",
     listNum: 2,
   },
+  { src: "songs/Afterlife.mp3", name: "Afterlife", listNum: 2 },
+  { src: "songs/Hope I Did It.mp3", name: "Hope I Did It", listNum: 2 },
+  { src: "songs/Lost In My Head.mp3", name: "Lost In My Head", listNum: 2 },
+  { src: "songs/Road Rage.mp3", name: "Road Rage", listNum: 2 },
   { src: "songs/All Talk.mp3", name: "All Talk", listNum: 2 },
   { src: "songs/Another One.mp3", name: "Another One", listNum: 2 },
   { src: "songs/Anxiety.mp3", name: "Anxiety", listNum: 2 },
@@ -690,6 +679,7 @@ const songlist = [
     listNum: 2,
   },
   { src: "songs/Iron On Me.mp3", name: "Challenger (Iron On Me)", listNum: 2 },
+  { src: "songs/Chase My Highs.mp3", name: "Chase My Highs", listNum: 2 },
   { src: "songs/Codeine Cobain.mp3", name: "Codeine Cobain", listNum: 2 },
   { src: "songs/Scarface (Cold Summer).mp3", name: "Cold Summer", listNum: 2 },
   { src: "songs/Condone It.mp3", name: "Condone It", listNum: 2 },
@@ -717,8 +707,19 @@ const songlist = [
   { src: "songs/Get Geeked.mp3", name: "Get Geeked", listNum: 2 },
   { src: "songs/Get Over.mp3", name: "Get Over", listNum: 2 },
   { src: "songs/Give Me My Fix.mp3", name: "Give Me My Fix", listNum: 2 },
+  { src: "songs/Happy Life.mp3", name: "Happy Life", listNum: 2 },
+  {
+    src: "songs/Her And Her Beauty.mp3",
+    name: "Her And Her Beauty",
+    listNum: 2,
+  },
   { src: "songs/Hi Tech Top.mp3", name: "Hi Tech Top", listNum: 2 },
   { src: "songs/Impatient.mp3", name: "Impatient", listNum: 2 },
+  {
+    src: "songs/Hold It Down (Highschool).mp3",
+    name: "Hold It Down (Highschool)",
+    listNum: 2,
+  },
   {
     src: "songs/Issues (Hit) (feat. G Herbo).mp3",
     name: "Issues (feat. G Herbo)",
@@ -835,28 +836,6 @@ const songlist = [
 
   { src: "", name: "GB&GR", listNum: 0 }, // Title Button
   //#region GB&GR
-  {
-    src: "songs/Chemical Imbalance (Sessions).mp3",
-    name: "Chemical Imbalance",
-    listNum: 3,
-  },
-  {
-    src: "songs/Curse from an Angel.mp3",
-    name: "Curse from an Angel",
-    listNum: 3,
-  },
-  {
-    src: "songs/Love Over There (v2).mp3",
-    name: "Walking In The Sand",
-    listNum: 3,
-  },
-  { src: "songs/On Me.mp3", name: "On Me", listNum: 3 },
-  { src: "songs/Start It Up.mp3", name: "Start It Up", listNum: 3 },
-  {
-    src: "songs/Thousand Cliffs (Intended).mp3",
-    name: "Thousand Cliffs (Intended)",
-    listNum: 3,
-  },
   { src: "songs/27 Club.mp3", name: "27 Club", listNum: 3 },
   { src: "songs/6.mp3", name: "6", listNum: 3 },
   { src: "songs/Addicted.mp3", name: "Addicted", listNum: 3 },
@@ -887,6 +866,11 @@ const songlist = [
   { src: "songs/Can't Survive.mp3", name: "Can't Survive", listNum: 3 },
   { src: "songs/Codeine Casket.mp3", name: "Codeine Casket", listNum: 3 },
   { src: "songs/Chase You Down.mp3", name: "Chase You Down", listNum: 3 },
+  {
+    src: "songs/Chemical Imbalance (Sessions).mp3",
+    name: "Chemical Imbalance",
+    listNum: 3,
+  },
   { src: "songs/Chimp.mp3", name: "Chimp", listNum: 3 },
   {
     src: "songs/Choppa (feat. D Savage).mp3",
@@ -899,6 +883,11 @@ const songlist = [
   { src: "songs/Confessions.mp3", name: "Confessions", listNum: 3 },
   { src: "songs/Crazy Things.mp3", name: "Crazy Things", listNum: 3 },
   { src: "songs/Crossing The Line.mp3", name: "Crossing The Line", listNum: 3 },
+  {
+    src: "songs/Curse from an Angel.mp3",
+    name: "Curse from an Angel",
+    listNum: 3,
+  },
   {
     src: "songs/Dagger (feat. MadeInTYO).mp3",
     name: "Dagger (feat. MadeInTYO)",
@@ -974,7 +963,10 @@ const songlist = [
   { src: "songs/Naruto.mp3", name: "Naruto", listNum: 3 },
   { src: "songs/Nesquick.mp3", name: "Nesquick", listNum: 3 },
   { src: "songs/No Depot (Nemo).mp3", name: "No Depot (Nemo)", listNum: 3 },
+  { src: "songs/Not Sorry.mp3", name: "Not Sorry", listNum: 3 },
+  { src: "songs/Numb The Pain.mp3", name: "Numb The Pain", listNum: 3 },
   { src: "songs/Orange.mp3", name: "Orange", listNum: 3 },
+  { src: "songs/On Me.mp3", name: "On Me", listNum: 3 },
   { src: "songs/Quitter.mp3", name: "Quitter", listNum: 3 },
   {
     src: "songs/Remind Me Of The Summer.mp3",
@@ -986,8 +978,7 @@ const songlist = [
   { src: "songs/Slasher.mp3", name: "Slasher", listNum: 3 },
   { src: "songs/Sleep Paralysis.mp3", name: "Sleep Paralysis", listNum: 3 },
   { src: "songs/So Fast.mp3", name: "Drivin' So Fast", listNum: 3 },
-  { src: "songs/Not Sorry.mp3", name: "Not Sorry", listNum: 3 },
-  { src: "songs/Numb The Pain.mp3", name: "Numb The Pain", listNum: 3 },
+  { src: "songs/Start It Up.mp3", name: "Start It Up", listNum: 3 },
   {
     src: "songs/Tales Of The Toxic.mp3",
     name: "Tales Of The Toxic",
@@ -1026,6 +1017,11 @@ const songlist = [
   },
   { src: "songs/Slenderman.mp3", name: "Slenderman", listNum: 3 },
   {
+    src: "songs/Thousand Cliffs (Intended).mp3",
+    name: "Thousand Cliffs (Intended)",
+    listNum: 3,
+  },
+  {
     src: "songs/To The Grave (Feelings).mp3",
     name: "To The Grave (Feelings)",
     listNum: 3,
@@ -1043,18 +1039,23 @@ const songlist = [
   { src: "songs/Trees.mp3", name: "Trees", listNum: 3 },
   { src: "songs/Trick Or Treat.mp3", name: "Trick Or Treat", listNum: 3 },
   { src: "songs/Uncertain Shadows.mp3", name: "Uncertain Shadows", listNum: 3 },
+  {
+    src: "songs/Love Over There (v2).mp3",
+    name: "Walking In The Sand",
+    listNum: 3,
+  },
   { src: "songs/Wavy.mp3", name: "Wavy", listNum: 3 },
   //#endregion
 
   { src: "", name: "999", listNum: 0 }, // Title Button
   //#region 999
   // New Songs
-  { src: "songs/Going MIA.mp3", name: "Going MIA", listNum: 4 },
-  { src: "songs/Believe In Me.mp3", name: "Believe In Me", listNum: 4 },
 
   { src: "songs/All Burnt Up.mp3", name: "All Burnt Up", listNum: 4 },
   { src: "songs/Already (v1).mp3", name: "Already (v1)", listNum: 4 },
+  { src: "songs/Believe In Me.mp3", name: "Believe In Me", listNum: 4 },
   { src: "songs/Faded (Oh No).mp3", name: "Faded (Oh No)", listNum: 4 },
+  { src: "songs/Going MIA.mp3", name: "Going MIA", listNum: 4 },
   {
     src: "songs/Hell (feat DMG Mthang).mp3",
     name: "Hell (feat DMG Mthang)",
@@ -1076,13 +1077,6 @@ const songlist = [
 
   { src: "", name: "JTK", listNum: 0 }, // Title Button
   //#region JTK
-  // New Songs
-  {
-    src: "songs/Xan Xan Xan (XXX) ft GDo.mp3",
-    name: "Xan Xan Xan (XXX) ft GDo",
-    listNum: 8,
-  },
-  { src: "songs/Right Left.mp3", name: "Right Left", listNum: 8 },
 
   { src: "songs/Aye Aye.mp3", name: "Aye Aye", listNum: 8 },
   { src: "songs/Blowing Up.mp3", name: "Blowing Up", listNum: 8 },
@@ -1108,9 +1102,15 @@ const songlist = [
   { src: "songs/Over & Over.mp3", name: "Over & Over", listNum: 8 },
   { src: "songs/Pesos.mp3", name: "Pesos", listNum: 8 },
   { src: "songs/Ran Off.mp3", name: "Ran Off", listNum: 8 },
+  { src: "songs/Right Left.mp3", name: "Right Left", listNum: 8 },
   { src: "songs/Thoughts.mp3", name: "Thoughts", listNum: 8 },
   { src: "songs/Surfin'.mp3", name: "Surfin'", listNum: 8 },
   { src: "songs/Who Are You.mp3", name: "Who Are You", listNum: 8 },
+  {
+    src: "songs/Xan Xan Xan (XXX) ft GDo.mp3",
+    name: "Xan Xan Xan (XXX) ft GDo",
+    listNum: 8,
+  },
   //#endregion
 
   { src: "", name: "Other", listNum: 0 }, // Title Button

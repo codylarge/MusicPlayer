@@ -3,8 +3,21 @@
 // listNum: 1: JW3  | 2: DRFL | 3: GB&GR | 4: 999 | 5: WRLD on Drugs | 6: Unsure | 7: Exclusives/Soundcloud | 8: JTK | 9: New | 0: Album title | 10: FIRST Album title
 const songlist = [
   //#region NEW
-  //{ src: "", name: "NEW PICKS", listNum: 10 }, // Title Button
-
+  { src: "", name: "NEW LEAKS", listNum: 10 }, // Title Button
+  { src: "songs/Blackout.mp3", name: "Blackout", listNum: 5 },
+  { src: "songs/Up In London.mp3", name: "Up In London", listNum: 5 },
+  { src: "songs/New Man.mp3", name: "New Man", listNum: 2 },
+  { src: "songs/No Jumper.mp3", name: "No Jumper", listNum: 2 },
+  { src: "songs/End Of The Day.mp3", name: "End Of The Day", listNum: 3 },
+  { src: "songs/Revive.mp3", name: "Revive", listNum: 1 },
+  { src: "songs/Ribbit.mp3", name: "Ribbit", listNum: 1 },
+  { src: "songs/Vegetarians.mp3", name: "Vegetarians", listNum: 1 },
+  { src: "songs/Cadaver.mp3", name: "Cadaver", listNum: 1 },
+  { src: "songs/Go Berserk.mp3", name: "Go Berserk", listNum: 1 },
+  { src: "songs/In The Dark.mp3", name: "In The Dark", listNum: 1 },
+  { src: "songs/Kill All My Troubles.mp3", name: "Kill All My Troubles", listNum: 1 },
+  { src: "songs/Leave My Sight.mp3", name: "Leave My Sight", listNum: 1 },
+  { src: "songs/Whole Wide World.mp3", name: "Whole Wide World", listNum: 1 },
   //#endregion
 
   { src: "", name: "WOD", listNum: 10 }, // Title Button
@@ -266,6 +279,11 @@ const songlist = [
   },
   { src: "songs/No Fears.mp3", name: "No Fears", listNum: 5 },
   { src: "songs/OJ Glove.mp3", name: "OJ Glove", listNum: 5 },
+  {
+    src: "songs/Only You On My Mind.mp3",
+    name: "Only You On My Mind",
+    listNum: 5,
+  },
   { src: "songs/On The Regular.mp3", name: "On The Regular", listNum: 5 },
   {
     src: "songs/Oreo (feat. Lil Yachty).mp3",
@@ -335,6 +353,7 @@ const songlist = [
     name: "That's A 50 (feat. Playboi Carti)",
     listNum: 5,
   },
+  { src: "songs/The Abyss.mp3", name: "The Abyss", listNum: 5 },
   { src: "songs/Thrills.mp3", name: "Thrills", listNum: 5 },
   { src: "songs/Through My Head.mp3", name: "Through My Head", listNum: 5 },
   { src: "songs/Try Me.mp3", name: "Try Me", listNum: 5 },
@@ -466,8 +485,10 @@ const songlist = [
   { src: "songs/Chase My Thrills.mp3", name: "Chase My Thrills", listNum: 1 },
   { src: "songs/Chrome.mp3", name: "Chrome", listNum: 1 },
   { src: "songs/Classy.mp3", name: "Classy", listNum: 1 },
+  { src: "songs/Clout.mp3", name: "Clout", listNum: 1 },
   { src: "songs/Coraline.mp3", name: "Coraline", listNum: 1 },
   { src: "songs/Cursed Heart.mp3", name: "Cursed Heart", listNum: 1 },
+  { src: "songs/Dark Tints.mp3", name: "Dark Tints", listNum: 1 },
   {
     src: "songs/Dark Thoughts (On Your Mind).mp3",
     name: "Dark Thoughts (On Your Mind)",
@@ -1092,6 +1113,7 @@ const songlist = [
     name: "Lavender Town",
     listNum: 8,
   },
+  { src: "songs/Let's Go.mp3", name: "Let's Go", listNum: 8 }, 
   { src: "songs/No Reason.mp3", name: "No Reason", listNum: 8 },
   { src: "songs/Oh My Oh My.mp3", name: "Oh My Oh My", listNum: 8 },
   {
@@ -1116,23 +1138,11 @@ const songlist = [
   { src: "", name: "Other", listNum: 0 }, // Title Button
   //#region Unknown
   // New Songs
-  { src: "songs/Dark Tints.mp3", name: "Dark Tints", listNum: 9 },
-  {
-    src: "songs/Forever ft Ty Dolla $ign.mp3",
-    name: "Forever ft Ty Dolla $ign",
-    listNum: 9,
-  },
   { src: "songs/Late Night.mp3", name: "Late Night", listNum: 9 },
-  { src: "songs/Clout.mp3", name: "Clout", listNum: 9 },
 
   { src: "songs/Dropout.mp3", name: "Dropout", listNum: 6 }, // 2017
-  { src: "songs/Let's Go.mp3", name: "Let's Go", listNum: 6 }, // Not sure
   { src: "songs/Maybe (Master).mp3", name: "Maybe (Master)", listNum: 6 }, // Stem
-  {
-    src: "songs/Only You On My Mind.mp3",
-    name: "Only You On My Mind",
-    listNum: 6,
-  }, // 2017
+ // 2017
 
   //#endregion
 ];

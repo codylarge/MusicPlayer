@@ -4,8 +4,8 @@
 const songlist = [
   //#region NEW
   { src: "", name: "NEW LEAKS", listNum: 10 }, // Title Button
+  { src: "songs/My Story.mp3", name: "My Story", listNum: 1 },
   { src: "songs/Like That.mp3", name: "Like That", listNum: 8 },
-  { src: "songs/In This Bitch v2.mp3", name: "In This Bitch(v2)", listNum: 5 },
   { src: "songs/Up In London.mp3", name: "Up In London", listNum: 5 },
   { src: "songs/New Man.mp3", name: "New Man", listNum: 2 },
   { src: "songs/No Jumper.mp3", name: "No Jumper", listNum: 2 },
@@ -227,6 +227,7 @@ const songlist = [
   },
   { src: "songs/In The Moment.mp3", name: "In The Moment", listNum: 5 },
   { src: "songs/In The Air.mp3", name: "In The Air", listNum: 5 },
+  { src: "songs/In This Bitch v2.mp3", name: "In This Bitch(v2)", listNum: 5 },
   {
     src: "songs/Irony (Inspire Me).mp3",
     name: "Irony (Inspire Me)",

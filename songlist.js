@@ -21,7 +21,7 @@ const songlist = [
   { src: "songs/Whole Wide World.mp3", name: "Whole Wide World", listNum: 1 },
   //#endregion
 
-  { src: "", name: "WOD", listNum: 10 }, // Title Button
+  { src: "", name: "WOD", listNum: 0 }, // Title Button
   //#region WOD
   { src: "songs/24 Hours.mp3", name: "24 Hours", listNum: 5 },
   {

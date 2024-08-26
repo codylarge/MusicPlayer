@@ -4,21 +4,17 @@
 const songlist = [
   //#region NEW
   { src: "", name: "NEW LEAKS", listNum: 10 }, // Title Button
-  { src: "songs/My Story.mp3", name: "My Story", listNum: 1 },
-  { src: "songs/Like That.mp3", name: "Like That", listNum: 8 },
-  { src: "songs/Up In London.mp3", name: "Up In London", listNum: 5 },
-  { src: "songs/New Man.mp3", name: "New Man", listNum: 2 },
-  { src: "songs/No Jumper.mp3", name: "No Jumper", listNum: 2 },
-  { src: "songs/End Of The Day.mp3", name: "End Of The Day", listNum: 3 },
-  { src: "songs/Revive.mp3", name: "Revive", listNum: 1 },
-  { src: "songs/Ribbit.mp3", name: "Ribbit", listNum: 1 },
-  { src: "songs/Vegetarians.mp3", name: "Vegetarians", listNum: 1 },
-  { src: "songs/Cadaver.mp3", name: "Cadaver", listNum: 1 },
-  { src: "songs/Go Berserk.mp3", name: "Go Berserk", listNum: 1 },
-  { src: "songs/In The Dark.mp3", name: "In The Dark", listNum: 1 },
-  { src: "songs/Kill All My Troubles.mp3", name: "Kill All My Troubles", listNum: 1 },
-  { src: "songs/Leave My Sight.mp3", name: "Leave My Sight", listNum: 1 },
-  { src: "songs/Whole Wide World.mp3", name: "Whole Wide World", listNum: 1 },
+  { src: "no_album/Anacondas.mp3", name: "Anacondas", listNum: 1 },
+  { src: "no_album/Cookie Crisp.mp3", name: "Cookie Crisp", listNum: 1 },
+  { src: "no_album/Crazy Type.mp3", name: "Crazy Type", listNum: 1 },
+  { src: "no_album/Double Date.mp3", name: "Double Date", listNum: 1 },
+  { src: "no_album/Dusk To Dawn.mp3", name: "Dusk To Dawn", listNum: 1 },
+  { src: "no_album/Screamin'.mp3", name: "Screamin'", listNum: 1 },
+  { src: "no_album/Swerve.mp3", name: "Swerve", listNum: 1 },
+  { src: "no_album/Toe To Toe.mp3", name: "Toe To Toe", listNum: 1 },
+  { src: "no_album/Lesson.mp3", name: "Lesson", listNum: 2 },
+  { src: "no_album/Sip Slow.mp3", name: "Sip Slow", listNum: 9 },
+  { src: "no_album/Feel It.mp3", name: "Feel It", listNum: 9 },
   //#endregion
 
   { src: "", name: "WOD", listNum: 0 }, // Title Button
@@ -360,6 +356,7 @@ const songlist = [
   { src: "songs/Through My Head.mp3", name: "Through My Head", listNum: 5 },
   { src: "songs/Try Me.mp3", name: "Try Me", listNum: 5 },
   { src: "songs/Uh Huh.mp3", name: "Uh Huh", listNum: 5 },
+  { src: "songs/Up In London.mp3", name: "Up In London", listNum: 5 },
   {
     src: "songs/Want To (feat. Playboi Carti).mp3",
     name: "Want To (feat. Playboi Carti)",
@@ -481,6 +478,7 @@ const songlist = [
     listNum: 1,
   },
   { src: "songs/Bloody Blade.mp3", name: "Bloody Blade", listNum: 1 },
+  { src: "songs/Cadaver.mp3", name: "Cadaver", listNum: 1 },
   { src: "songs/Californication.mp3", name: "Californication", listNum: 1 },
   { src: "songs/Can't Be Saved.mp3", name: "Can't Be Saved", listNum: 1 },
   { src: "songs/Carry It.mp3", name: "Carry It", listNum: 1 },
@@ -516,6 +514,7 @@ const songlist = [
   { src: "songs/Forever Love.mp3", name: "Forever Love", listNum: 1 },
   { src: "songs/Get Excited.mp3", name: "Get Excited", listNum: 1 },
   { src: "songs/Go Away.mp3", name: "Go Away", listNum: 1 },
+  { src: "songs/Go Berserk.mp3", name: "Go Berserk", listNum: 1 },
   {
     src: "songs/Good Times (feat. Kid Cudi).mp3",
     name: "Good Times (feat. Kid Cudi)",
@@ -533,7 +532,7 @@ const songlist = [
     name: "Home (feat. LAROI)",
     listNum: 1,
   },
-  { src: "songs/I Wonder.mp3", name: "I Wonder", listNum: 1 },
+  { src: "songs/In The Dark.mp3", name: "In The Dark", listNum: 1 },
   {
     src: "songs/Infared (with Trippie Redd).mp3",
     name: "Infared (with Trippie Redd)",
@@ -542,11 +541,15 @@ const songlist = [
   { src: "songs/K Like A Russian.mp3", name: "K Like A Russian", listNum: 1 },
   { src: "songs/Karate Kid.mp3", name: "Karate Kid", listNum: 1 },
   { src: "songs/Keep It.mp3", name: "Keep It", listNum: 1 },
+  { src: "songs/Kill All My Troubles.mp3", name: "Kill All My Troubles", listNum: 1 },
+  { src: "songs/Leave My Sight.mp3", name: "Leave My Sight", listNum: 1 },
   {
     src: "songs/On The Road.mp3",
     name: "Let It Off (On The Road)",
     listNum: 1,
   },
+  { src: "songs/My Story.mp3", name: "My Story", listNum: 1 },
+  { src: "songs/I Wonder.mp3", name: "I Wonder", listNum: 1 },
   {
     src: "songs/Let Me Be (Lone Ranger).mp3",
     name: "Let Me Be (Lone Ranger)",
@@ -599,6 +602,8 @@ const songlist = [
   { src: "songs/Rain Dance.mp3", name: "Rain Dance", listNum: 1 },
   { src: "songs/Reason.mp3", name: "Reason", listNum: 1 },
   { src: "songs/Red Moonlight.mp3", name: "Red Moonlight", listNum: 1 },
+  { src: "songs/Revive.mp3", name: "Revive", listNum: 1 },
+  { src: "songs/Ribbit.mp3", name: "Ribbit", listNum: 1 },
   { src: "songs/Rich Forever.mp3", name: "Rich Forever", listNum: 1 },
   { src: "songs/Rikers.mp3", name: "Rikers", listNum: 1 },
   { src: "songs/Saved By The Bell.mp3", name: "Saved By The Bell", listNum: 1 },
@@ -628,6 +633,7 @@ const songlist = [
     listNum: 1,
   },
   { src: "songs/Until I Die.mp3", name: "Until I Die", listNum: 1 },
+  { src: "songs/Vegetarians.mp3", name: "Vegetarians", listNum: 1 },
   { src: "songs/My Way Home (Pt. 2).mp3", name: "Used And Abused", listNum: 1 },
   { src: "songs/Watcha On.mp3", name: "Watcha On", listNum: 1 },
   { src: "songs/Way Too Many.mp3", name: "Way Too Many", listNum: 1 },
@@ -641,6 +647,7 @@ const songlist = [
     name: "What's Brakkin' (feat. Offset)",
     listNum: 1,
   },
+  { src: "songs/Whole Wide World.mp3", name: "Whole Wide World", listNum: 1 },
   { src: "songs/X-Mas List.mp3", name: "X-Mas List", listNum: 1 },
   { src: "songs/Zoom.mp3", name: "Zoom", listNum: 1 },
   //#endregion
@@ -794,6 +801,8 @@ const songlist = [
     name: "My Gang (Together)",
     listNum: 2,
   },
+  { src: "songs/New Man.mp3", name: "New Man", listNum: 2 },
+  { src: "songs/No Jumper.mp3", name: "No Jumper", listNum: 2 },
   { src: "songs/Off The Rip.mp3", name: "Off The Rip", listNum: 2 },
   { src: "songs/Out The Projects.mp3", name: "Out The Projects", listNum: 2 },
   {
@@ -932,6 +941,7 @@ const songlist = [
     name: "Emotional Overdose",
     listNum: 3,
   },
+  { src: "songs/End Of The Day.mp3", name: "End Of The Day", listNum: 3 },
   { src: "songs/Everlasting Love.mp3", name: "Everlasting Love", listNum: 3 },
   { src: "songs/Eyes Closed.mp3", name: "Eyes Closed", listNum: 3 },
   { src: "songs/Eyes Up.mp3", name: "Eyes Up", listNum: 3 },
@@ -1116,6 +1126,7 @@ const songlist = [
     listNum: 8,
   },
   { src: "songs/Let's Go.mp3", name: "Let's Go", listNum: 8 }, 
+  { src: "songs/Like That.mp3", name: "Like That", listNum: 8 },
   { src: "songs/No Reason.mp3", name: "No Reason", listNum: 8 },
   { src: "songs/Oh My Oh My.mp3", name: "Oh My Oh My", listNum: 8 },
   {

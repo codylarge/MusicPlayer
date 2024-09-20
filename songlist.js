@@ -12,7 +12,9 @@ const songlist = [
   { src: "no_album/Screamin'.mp3", name: "Screamin'", listNum: 1 },
   { src: "no_album/Swerve.mp3", name: "Swerve", listNum: 1 },
   { src: "no_album/Toe To Toe.mp3", name: "Toe To Toe", listNum: 1 },
+  { src: "songs/Think Twice.mp3", name: "Think Twice", listNum: 5 },
   { src: "no_album/Lesson.mp3", name: "Lesson", listNum: 2 },
+  { src: "songs/Percules.mp3", name: "Perky Potter", listNum: 2 },
   { src: "no_album/Sip Slow.mp3", name: "Sip Slow", listNum: 9 },
   { src: "no_album/Feel It.mp3", name: "Feel It", listNum: 9 },
   //#endregion

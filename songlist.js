@@ -4,19 +4,18 @@
 const songlist = [
   //#region NEW
   { src: "", name: "NEW LEAKS", listNum: 10 }, // Title Button
+  { src: "songs/Broke Boys Master.mp3", name: "Broke Boys", listNum: 1 },
+  { src: "songs/Watch Yo Step.mp3", name: "Watch Yo Step", listNum: 1 },
   { src: "no_album/Anacondas.mp3", name: "Anacondas", listNum: 1 },
   { src: "no_album/Cookie Crisp.mp3", name: "Cookie Crisp", listNum: 1 },
   { src: "no_album/Crazy Type.mp3", name: "Crazy Type", listNum: 1 },
   { src: "no_album/Double Date.mp3", name: "Double Date", listNum: 1 },
   { src: "no_album/Dusk To Dawn.mp3", name: "Dusk To Dawn", listNum: 1 },
-  { src: "no_album/Screamin'.mp3", name: "Screamin'", listNum: 1 },
   { src: "no_album/Swerve.mp3", name: "Swerve", listNum: 1 },
   { src: "no_album/Toe To Toe.mp3", name: "Toe To Toe", listNum: 1 },
   { src: "songs/Think Twice.mp3", name: "Think Twice", listNum: 5 },
   { src: "no_album/Lesson.mp3", name: "Lesson", listNum: 2 },
   { src: "songs/Percules.mp3", name: "Perky Potter", listNum: 2 },
-  { src: "no_album/Sip Slow.mp3", name: "Sip Slow", listNum: 9 },
-  { src: "no_album/Feel It.mp3", name: "Feel It", listNum: 9 },
   //#endregion
 
   { src: "", name: "WOD", listNum: 0 }, // Title Button
@@ -614,6 +613,7 @@ const songlist = [
     name: "Scarface (feat. Gunna)",
     listNum: 1,
   },
+  { src: "songs/Screamin'.mp3", name: "Screamin'", listNum: 1 },
   { src: "songs/Shot Em Down.mp3", name: "Shot Em Down", listNum: 1 },
   {
     src: "songs/Soda Pop (feat. Roddy Ricch).mp3",
@@ -1157,6 +1157,8 @@ const songlist = [
 
   { src: "songs/Dropout.mp3", name: "Dropout", listNum: 6 }, // 2017
   { src: "songs/Maybe (Master).mp3", name: "Maybe (Master)", listNum: 6 }, // Stem
+  { src: "no_album/Sip Slow.mp3", name: "Sip Slow", listNum: 6 },
+  { src: "no_album/Feel It.mp3", name: "Feel It", listNum: 6 },
  // 2017
 
   //#endregion

@@ -410,6 +410,7 @@ const songlist = [
   { src: "songs/How Dat Go.mp3", name: "How Dat Go", listNum: 7 },
   { src: "songs/I Know One Thing.mp3", name: "I Know One Thing", listNum: 7 },
   { src: "songs/KNOW US.mp3", name: "KNOW US", listNum: 7 },
+  { src: "songs/Moonlight.mp3", name: "Moonlight", listNum: 7 },
   { src: "songs/MOVES Freestyle.mp3", name: "MOVES Freestyle", listNum: 7 },
   { src: "songs/My Fault.mp3", name: "My Fault", listNum: 7 },
   {
@@ -893,6 +894,7 @@ const songlist = [
     name: "Billy Idol (Mary Jane)",
     listNum: 3,
   },
+  { src: "songs/Blindfold (So Low).mp3", name: "Blindfold(So Low)", listNum: 3 },
   { src: "songs/Bottle.mp3", name: "Bottle", listNum: 3 },
   { src: "songs/Boy Wit Da Bandz.mp3", name: "Boy Wit Da Bandz", listNum: 3 },
   {

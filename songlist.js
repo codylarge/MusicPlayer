@@ -8,19 +8,7 @@ const songlist = [
   { src: "songs/Warning.mp3", name: "Warning", listNum: 1 },
   { src: "songs/Call Me Whenever.mp3", name: "Call Me Whenever", listNum: 3 },
   { src: "songs/Live For.mp3", name: "Live For", listNum: 3 },
-  { src: "songs/Computers.mp3", name: "Computers", listNum: 1 },
-  { src: "songs/Broke Boys Master.mp3", name: "Broke Boys", listNum: 1 },
-  { src: "songs/Watch Yo Step.mp3", name: "Watch Yo Step", listNum: 1 },
-  { src: "no_album/Anacondas.mp3", name: "Anacondas", listNum: 1 },
-  { src: "no_album/Cookie Crisp.mp3", name: "Cookie Crisp", listNum: 1 },
-  { src: "no_album/Crazy Type.mp3", name: "Crazy Type", listNum: 1 },
-  { src: "no_album/Double Date.mp3", name: "Double Date", listNum: 1 },
-  { src: "no_album/Dusk To Dawn.mp3", name: "Dusk To Dawn", listNum: 1 },
-  { src: "no_album/Swerve.mp3", name: "Swerve", listNum: 1 },
-  { src: "no_album/Toe To Toe.mp3", name: "Toe To Toe", listNum: 1 },
   { src: "songs/Think Twice.mp3", name: "Think Twice", listNum: 5 },
-  { src: "no_album/Lesson.mp3", name: "Lesson", listNum: 2 },
-  { src: "songs/Percules.mp3", name: "Perky Potter", listNum: 2 },
   //#endregion
 
   { src: "", name: "WOD", listNum: 0 }, // Title Button
@@ -454,6 +442,7 @@ const songlist = [
     name: "All Alone (On My Own)",
     listNum: 1,
   },
+  { src: "songs/Anacondas.mp3", name: "Anacondas", listNum: 1 },
   {
     src: "songs/Another Thing To Do It.mp3",
     name: "Another Thing To Do It",
@@ -485,6 +474,7 @@ const songlist = [
     listNum: 1,
   },
   { src: "songs/Bloody Blade.mp3", name: "Bloody Blade", listNum: 1 },
+  { src: "songs/Broke Boys Master.mp3", name: "Broke Boys", listNum: 1 },
   { src: "songs/Cadaver.mp3", name: "Cadaver", listNum: 1 },
   { src: "songs/Californication.mp3", name: "Californication", listNum: 1 },
   { src: "songs/Can't Be Saved.mp3", name: "Can't Be Saved", listNum: 1 },
@@ -493,7 +483,10 @@ const songlist = [
   { src: "songs/Chrome.mp3", name: "Chrome", listNum: 1 },
   { src: "songs/Classy.mp3", name: "Classy", listNum: 1 },
   { src: "songs/Clout.mp3", name: "Clout", listNum: 1 },
+  { src: "songs/Computers.mp3", name: "Computers", listNum: 1 },
+  { src: "songs/Cookie Crisp.mp3", name: "Cookie Crisp", listNum: 1 },
   { src: "songs/Coraline.mp3", name: "Coraline", listNum: 1 },
+  { src: "songs/Crazy Type.mp3", name: "Crazy Type", listNum: 1 },
   { src: "songs/Cursed Heart.mp3", name: "Cursed Heart", listNum: 1 },
   { src: "songs/Dark Tints.mp3", name: "Dark Tints", listNum: 1 },
   {
@@ -509,11 +502,13 @@ const songlist = [
     name: "Door (feat. Chance The Rapper)",
     listNum: 1,
   },
+  { src: "songs/Double Date.mp3", name: "Double Date", listNum: 1 },
   {
     src: "songs/Drugs Are My Friends.mp3",
     name: "Drugs Are My Friends",
     listNum: 1,
   },
+  { src: "songs/Dusk To Dawn.mp3", name: "Dusk To Dawn", listNum: 1 },
   { src: "songs/Fire In My Lungs.mp3", name: "Fire In My Lungs", listNum: 1 },
   { src: "songs/Flight To London.mp3", name: "Flight To London", listNum: 1 },
   { src: "songs/Floor It.mp3", name: "Floor It", listNum: 1 },
@@ -633,7 +628,9 @@ const songlist = [
     listNum: 1,
   },
   { src: "songs/Swear.mp3", name: "Swear", listNum: 1 },
+  { src: "songs/Swerve.mp3", name: "Swerve", listNum: 1 },
   { src: "songs/Take My Soul.mp3", name: "Take My Soul", listNum: 1 },
+  { src: "songs/Toe To Toe.mp3", name: "Toe To Toe", listNum: 1 },
   { src: "songs/Tattoos And Ink.mp3", name: "Tattoos And Ink", listNum: 1 },
   {
     src: "songs/Unexplainable.mp3",
@@ -643,6 +640,7 @@ const songlist = [
   { src: "songs/Until I Die.mp3", name: "Until I Die", listNum: 1 },
   { src: "songs/Vegetarians.mp3", name: "Vegetarians", listNum: 1 },
   { src: "songs/My Way Home (Pt. 2).mp3", name: "Used And Abused", listNum: 1 },
+  { src: "songs/Watch Yo Step.mp3", name: "Watch Yo Step", listNum: 1 },
   { src: "songs/Watcha On.mp3", name: "Watcha On", listNum: 1 },
   { src: "songs/Way Too Many.mp3", name: "Way Too Many", listNum: 1 },
   {
@@ -776,6 +774,7 @@ const songlist = [
     name: "Late Night Thoughts",
     listNum: 2,
   },
+  { src: "songs/Lesson.mp3", name: "Lesson", listNum: 2 },
   { src: "songs/Lock Box.mp3", name: "Lock Box", listNum: 2 },
   {
     src: "songs/Lost Too Many (Goblin).mp3",
@@ -813,6 +812,7 @@ const songlist = [
   { src: "songs/No Jumper.mp3", name: "No Jumper", listNum: 2 },
   { src: "songs/Off The Rip.mp3", name: "Off The Rip", listNum: 2 },
   { src: "songs/Out The Projects.mp3", name: "Out The Projects", listNum: 2 },
+  { src: "songs/Percules.mp3", name: "Perky Potter", listNum: 2 },
   {
     src: "songs/Pesos (Troubled Kids).mp3",
     name: "Pesos (Troubled Kids)",

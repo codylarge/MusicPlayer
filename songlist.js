@@ -4,10 +4,13 @@
 const songlist = [
   //#region NEW
   { src: "", name: "NEW LEAKS", listNum: 10 }, // Title Button
+  { src: "songs/Morning Again.mp3", name: "Morning Again", listNum: 2 },
+  { src: "songs/Young, Wild, And Rich (V2).mp3", name: "Young, Wild, And Rich (OG)", listNum: 5 },
   { src: "songs/Young, Wild, And Rich.mp3", name: "Young, Wild, And Rich", listNum: 5 },
   { src: "songs/Warning.mp3", name: "Warning", listNum: 1 },
   { src: "songs/Call Me Whenever.mp3", name: "Call Me Whenever", listNum: 3 },
   { src: "songs/Live For.mp3", name: "Live For", listNum: 3 },
+  { src: "songs/Game v1.mp3", name: "Game (V1)", listNum: 3 },
   { src: "songs/Think Twice.mp3", name: "Think Twice", listNum: 5 },
   //#endregion
 
@@ -577,6 +580,7 @@ const songlist = [
     listNum: 1,
   },
   { src: "songs/Maserati.mp3", name: "Maserati", listNum: 1 },
+  { src: "songs/Money Purified.mp3", name: "Money Purified", listNum: 1 },
   { src: "songs/Murder Rate.mp3", name: "Murder Rate", listNum: 1 },
   { src: "songs/My Year.mp3", name: "My Year", listNum: 1 },
   { src: "songs/NLMB (Oh Dear).mp3", name: "NLMB (Oh Dear)", listNum: 1 },

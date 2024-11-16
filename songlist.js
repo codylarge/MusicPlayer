@@ -1062,6 +1062,8 @@ const songlist = [
     listNum: 3,
   },
   { src: "songs/Slenderman.mp3", name: "Slenderman", listNum: 3 },
+
+  { src: "songs/Styrofoam (Studio Sessions).mp3", name: "  Styrofoam", listNum: 3 },
   {
     src: "songs/Thousand Cliffs (Intended).mp3",
     name: "Thousand Cliffs (Intended)",

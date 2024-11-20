@@ -4,14 +4,13 @@
 const songlist = [
   //#region NEW
   { src: "", name: "NEW LEAKS", listNum: 10 }, // Title Button
+  { src: "songs/Bask In The Moment.mp3", name: "In The Moment", listNum: 5 },
+  { src: "songs/No Hands.mp3", name: "No Hands", listNum: 2 },
   { src: "songs/Morning Again.mp3", name: "Morning Again", listNum: 2 },
-  { src: "songs/Young, Wild, And Rich (V2).mp3", name: "Young, Wild, And Rich (OG)", listNum: 5 },
-  { src: "songs/Young, Wild, And Rich.mp3", name: "Young, Wild, And Rich", listNum: 5 },
+  { src: "songs/Young, Wild, And Rich (V2).mp3", name: "Young, Wild, And Rich", listNum: 5 },
   { src: "songs/Warning.mp3", name: "Warning", listNum: 1 },
   { src: "songs/Call Me Whenever.mp3", name: "Call Me Whenever", listNum: 3 },
   { src: "songs/Live For.mp3", name: "Live For", listNum: 3 },
-  { src: "songs/Game v1.mp3", name: "Game (V1)", listNum: 3 },
-  { src: "songs/Think Twice.mp3", name: "Think Twice", listNum: 5 },
   //#endregion
 
   { src: "", name: "WOD", listNum: 0 }, // Title Button
@@ -218,7 +217,7 @@ const songlist = [
     name: "Inner Peace (Travelling)",
     listNum: 5,
   },
-  { src: "songs/In The Moment.mp3", name: "In The Moment", listNum: 5 },
+  { src: "songs/In The Moment.mp3", name: "She On Go", listNum: 5 },
   { src: "songs/In The Air.mp3", name: "In The Air", listNum: 5 },
   { src: "songs/In This Bitch v2.mp3", name: "In This Bitch(v2)", listNum: 5 },
   {
@@ -349,6 +348,7 @@ const songlist = [
     listNum: 5,
   },
   { src: "songs/The Abyss.mp3", name: "The Abyss", listNum: 5 },
+  { src: "songs/Think Twice.mp3", name: "Think Twice", listNum: 5 },
   { src: "songs/Thrills.mp3", name: "Thrills", listNum: 5 },
   { src: "songs/Through My Head.mp3", name: "Through My Head", listNum: 5 },
   { src: "songs/Try Me.mp3", name: "Try Me", listNum: 5 },
@@ -971,6 +971,7 @@ const songlist = [
   { src: "songs/From The Bottom.mp3", name: "From The Bottom", listNum: 3 },
   { src: "songs/From The Start.mp3", name: "From The Start", listNum: 3 },
   { src: "songs/Game.mp3", name: "Game", listNum: 3 },
+  { src: "songs/Game v1.mp3", name: "Game (V1)", listNum: 3 },
   { src: "songs/Girlfriend.mp3", name: "Girlfriend", listNum: 3 },
   { src: "songs/Goyard Bag.mp3", name: "Goyard Bag", listNum: 3 },
   { src: "songs/Grace.mp3", name: "Grace", listNum: 3 },

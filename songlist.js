@@ -4,6 +4,7 @@
 const songlist = [
   //#region NEW
   { src: "", name: "NEW LEAKS", listNum: 10 }, // Title Button
+  { src: "songs/Burn Alive.mp3", name: "Burn Alive", listNum: 1 },
   { src: "songs/Bask In The Moment.mp3", name: "In The Moment", listNum: 5 },
   { src: "songs/No Hands.mp3", name: "No Hands", listNum: 2 },
   { src: "songs/Morning Again.mp3", name: "Morning Again", listNum: 2 },

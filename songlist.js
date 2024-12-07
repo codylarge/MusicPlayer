@@ -624,6 +624,7 @@ const songlist = [
   },
   { src: "songs/Screamin'.mp3", name: "Screamin'", listNum: 1 },
   { src: "songs/Shot Em Down.mp3", name: "Shot Em Down", listNum: 1 },
+  { src: "songs/Sip Slow.mp3", name: "Sip Slow", listNum: 1 },
   {
     src: "songs/Soda Pop (feat. Roddy Ricch).mp3",
     name: "Soda Pop (feat. Roddy Ricch)",
@@ -1175,7 +1176,6 @@ const songlist = [
 
   { src: "songs/Dropout.mp3", name: "Dropout", listNum: 6 }, // 2017
   { src: "songs/Maybe (Master).mp3", name: "Maybe (Master)", listNum: 6 }, // Stem
-  { src: "no_album/Sip Slow.mp3", name: "Sip Slow", listNum: 6 },
   { src: "no_album/Feel It.mp3", name: "Feel It", listNum: 6 },
  // 2017
 

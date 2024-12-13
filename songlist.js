@@ -4,6 +4,7 @@
 const songlist = [
   //#region NEW
   { src: "", name: "NEW LEAKS", listNum: 10 }, // Title Button
+  { src: "songs/Take A Pic.mp3", name: "Take A Pic", listNum: 3 },
   { src: "songs/Ride Round Dirty.mp3", name: "Ride Round Dirty", listNum: 5 },
   { src: "songs/Look At Me.mp3", name: "Look At Me", listNum: 2 },
   { src: "songs/Let Me Breathe.mp3", name: "Let Me Breathe", listNum: 1 },
